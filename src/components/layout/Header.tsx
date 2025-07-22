@@ -104,7 +104,7 @@ const Header = () => {
           </div>
 
           {/* Navigation Bar */}
-          <div className="border-t border-blue-800">
+          <div>
             <nav className="flex items-center justify-center space-x-12 py-4">
               <Link
                 to="/services/heating"
