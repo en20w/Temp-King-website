@@ -18,33 +18,34 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* HVAC Brand Colors */
-    --primary: 0 84% 50%; /* Red brand color */
+    /* Brand Colors */
+    --primary: 210 100% 50%; /* Blue brand color */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 45 100% 51%; /* Yellow accent color */
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 195 100% 50%; /* Light blue accent color */
+    --secondary-foreground: 210 50% 98%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 45 100% 51%; /* Yellow accent */
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 225 100% 60%; /* Deep blue accent */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 0 84% 50%;
+    --ring: 210 100% 50%;
 
     --radius: 0.5rem;
 
-    /* HVAC Specific Colors */
-    --hvac-red: 0 84% 50%;
-    --hvac-yellow: 45 100% 51%;
-    --hvac-dark: 222.2 47.4% 11.2%;
-    --hvac-light: 0 0% 98%;
+    /* Theme Specific Colors */
+    --theme-blue: 210 100% 50%;
+    --theme-light-blue: 195 100% 50%;
+    --theme-deep-blue: 225 100% 60%;
+    --theme-dark: 222.2 47.4% 11.2%;
+    --theme-light: 210 50% 98%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -66,16 +67,16 @@ All colors MUST be HSL.
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 0 84% 60%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 45 100% 60%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 195 100% 50%;
+    --secondary-foreground: 210 50% 98%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 45 100% 60%;
+    --accent: 225 100% 60%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -105,29 +106,41 @@ All colors MUST be HSL.
   }
 }
 
-/* HVAC Utility Classes */
+/* Theme Utility Classes */
 @layer utilities {
-  .hvac-red {
-    color: hsl(var(--hvac-red));
+  .theme-blue {
+    color: hsl(var(--theme-blue));
   }
   
-  .hvac-yellow {
-    color: hsl(var(--hvac-yellow));
+  .theme-light-blue {
+    color: hsl(var(--theme-light-blue));
   }
   
-  .bg-hvac-red {
-    background-color: hsl(var(--hvac-red));
+  .theme-deep-blue {
+    color: hsl(var(--theme-deep-blue));
   }
   
-  .bg-hvac-yellow {
-    background-color: hsl(var(--hvac-yellow));
+  .bg-theme-blue {
+    background-color: hsl(var(--theme-blue));
   }
   
-  .border-hvac-red {
-    border-color: hsl(var(--hvac-red));
+  .bg-theme-light-blue {
+    background-color: hsl(var(--theme-light-blue));
   }
   
-  .border-hvac-yellow {
-    border-color: hsl(var(--hvac-yellow));
+  .bg-theme-deep-blue {
+    background-color: hsl(var(--theme-deep-blue));
+  }
+  
+  .border-theme-blue {
+    border-color: hsl(var(--theme-blue));
+  }
+  
+  .border-theme-light-blue {
+    border-color: hsl(var(--theme-light-blue));
+  }
+  
+  .border-theme-deep-blue {
+    border-color: hsl(var(--theme-deep-blue));
   }
 }
