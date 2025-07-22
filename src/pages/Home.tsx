@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, Clock, Shield, Users, Wrench } from 'lucide-react';
@@ -5,8 +6,8 @@ import { Link } from 'react-router-dom';
 import ServicesSection from '@/components/sections/ServicesSection';
 import HeroToServicesTransition from '@/components/sections/HeroToServicesTransition';
 import EnhancedWhyChooseUs from '@/components/sections/EnhancedWhyChooseUs';
-import WhyChooseToScheduleTransition from '@/components/sections/WhyChooseToScheduleTransition';
-import InteractiveAppointmentFlow from '@/components/sections/InteractiveAppointmentFlow';
+import CreativeScheduleTransition from '@/components/sections/CreativeScheduleTransition';
+import EnhancedInteractiveFlow from '@/components/sections/EnhancedInteractiveFlow';
 import FloatingAnimations from '@/components/animations/FloatingAnimations';
 
 const Home = () => {
@@ -48,37 +49,37 @@ const Home = () => {
       {/* Creative Transition */}
       <HeroToServicesTransition />
 
-      {/* Services Section - Using updated component without header */}
+      {/* Services Section */}
       <ServicesSection />
 
       {/* Enhanced Why Choose Us Section */}
       <EnhancedWhyChooseUs />
 
-      {/* Smooth Transition to Schedule Section */}
-      <WhyChooseToScheduleTransition />
+      {/* Creative Schedule Transition */}
+      <CreativeScheduleTransition />
 
       {/* Enhanced Interactive Schedule Appointment Section */}
       <section className="py-20 bg-gradient-to-br from-hvac-red via-hvac-red to-red-700 relative overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-32 h-32 bg-hvac-yellow rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-10 right-10 w-40 h-40 bg-white rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-          <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-hvac-yellow rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-10 left-10 w-32 h-32 bg-hvac-yellow rounded-full blur-3xl animate-float"></div>
+          <div className="absolute bottom-10 right-10 w-40 h-40 bg-white rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }}></div>
+          <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-hvac-yellow rounded-full blur-2xl animate-float" style={{ animationDelay: '1.5s' }}></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Schedule Your Appointment Today
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in">
+              Schedule Your Appointment
             </h2>
-            <p className="text-xl text-red-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-red-100 mb-8 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
               Experience our streamlined booking process. Choose your service, pick your time, and get back to comfort.
             </p>
           </div>
           
-          <InteractiveAppointmentFlow />
+          <EnhancedInteractiveFlow />
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-12 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <p className="text-red-100 text-sm">
               Available 24/7 for emergency services • Free estimates on new installations
             </p>
