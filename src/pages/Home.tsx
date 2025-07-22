@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -14,7 +13,7 @@ const Home = () => {
       link: '/services/ac-repair'
     },
     {
-      title: 'Heating Repair',
+      title: 'Heating Repair', 
       description: 'Professional heating system repair and maintenance',
       icon: '🔥',
       link: '/services/heating-repair'
@@ -57,29 +56,20 @@ const Home = () => {
   return (
     <div className="space-y-0">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-hvac-red via-red-600 to-red-700 text-white py-20">
+      <section className="bg-gray-50 py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <div className="flex justify-center mb-4">
-              <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-6 w-6 fill-hvac-yellow text-hvac-yellow" />
-                ))}
-              </div>
-              <span className="ml-2 text-lg font-semibold">4.9/5 Google Reviews</span>
-            </div>
-            
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          <div className="max-w-4xl mx-auto text-center space-y-6">            
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight text-gray-900">
               Dallas-Fort Worth's
-              <span className="block text-hvac-yellow">Trusted HVAC Experts</span>
+              <span className="block text-hvac-red">Trusted HVAC Experts</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-red-100 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
               Professional heating, cooling, and air quality services with 24/7 emergency support. 
               Same-day service available.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+            <div className="flex justify-center pt-4">
               <Button 
                 size="lg" 
                 className="bg-hvac-yellow text-black hover:bg-hvac-yellow/90 text-lg px-8 py-3 h-auto"
@@ -87,28 +77,6 @@ const Home = () => {
                 <Phone className="mr-2 h-5 w-5" />
                 Call (214) 555-0123
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-2 border-white text-white hover:bg-white hover:text-hvac-red text-lg px-8 py-3 h-auto"
-              >
-                Schedule Service Online
-              </Button>
-            </div>
-
-            <div className="flex flex-wrap justify-center gap-6 pt-8 text-sm">
-              <div className="flex items-center">
-                <Clock className="h-4 w-4 mr-2" />
-                24/7 Emergency Service
-              </div>
-              <div className="flex items-center">
-                <Shield className="h-4 w-4 mr-2" />
-                Licensed & Insured
-              </div>
-              <div className="flex items-center">
-                <Users className="h-4 w-4 mr-2" />
-                10+ Years Experience
-              </div>
             </div>
           </div>
         </div>
