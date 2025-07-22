@@ -5,6 +5,7 @@ import { Phone, Star, Clock, Shield, Users, Wrench } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ServicesSection from '@/components/sections/ServicesSection';
 import HeroToServicesTransition from '@/components/sections/HeroToServicesTransition';
+import EnhancedWhyChooseUs from '@/components/sections/EnhancedWhyChooseUs';
 import FloatingAnimations from '@/components/animations/FloatingAnimations';
 
 const Home = () => {
@@ -70,42 +71,8 @@ const Home = () => {
       {/* Services Section - Using updated component without header */}
       <ServicesSection />
 
-      {/* Why Choose Us Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose HVAC ProService?
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="bg-hvac-red text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Clock className="h-8 w-8" />
-              </div>
-              <h3 className="text-xl font-bold mb-2">24/7 Emergency Service</h3>
-              <p className="text-gray-600">Available around the clock for urgent HVAC repairs and emergencies</p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-hvac-yellow text-black p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Shield className="h-8 w-8" />
-              </div>
-              <h3 className="text-xl font-bold mb-2">Licensed & Insured</h3>
-              <p className="text-gray-600">Fully licensed technicians with comprehensive insurance coverage</p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-hvac-red text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Wrench className="h-8 w-8" />
-              </div>
-              <h3 className="text-xl font-bold mb-2">Expert Technicians</h3>
-              <p className="text-gray-600">Highly trained professionals with years of HVAC experience</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Enhanced Why Choose Us Section */}
+      <EnhancedWhyChooseUs />
 
       {/* Reviews Section */}
       <section className="py-16 bg-gray-50">
