@@ -18,17 +18,17 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* HVAC Brand Colors */
-    --primary: 0 84% 50%; /* Red brand color */
+    /* HVAC Brand Colors - Blue Theme */
+    --primary: 214 100% 50%; /* Blue brand color */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 45 100% 51%; /* Yellow accent color */
+    --secondary: 195 100% 60%; /* Light blue accent color */
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 45 100% 51%; /* Yellow accent */
+    --accent: 195 100% 60%; /* Light blue accent */
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -36,13 +36,13 @@ All colors MUST be HSL.
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 0 84% 50%;
+    --ring: 214 100% 50%;
 
     --radius: 0.5rem;
 
-    /* HVAC Specific Colors */
-    --hvac-red: 0 84% 50%;
-    --hvac-yellow: 45 100% 51%;
+    /* HVAC Specific Colors - Blue Theme */
+    --hvac-blue: 214 100% 50%; /* Primary blue */
+    --hvac-light-blue: 195 100% 60%; /* Light blue accent */
     --hvac-dark: 222.2 47.4% 11.2%;
     --hvac-light: 0 0% 98%;
 
@@ -66,16 +66,16 @@ All colors MUST be HSL.
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 0 84% 60%;
+    --primary: 214 100% 60%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 45 100% 60%;
+    --secondary: 195 100% 70%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 45 100% 60%;
+    --accent: 195 100% 70%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -105,30 +105,30 @@ All colors MUST be HSL.
   }
 }
 
-/* HVAC Utility Classes */
+/* HVAC Utility Classes - Blue Theme */
 @layer utilities {
-  .hvac-red {
-    color: hsl(var(--hvac-red));
+  .hvac-blue {
+    color: hsl(var(--hvac-blue));
   }
   
-  .hvac-yellow {
-    color: hsl(var(--hvac-yellow));
+  .hvac-light-blue {
+    color: hsl(var(--hvac-light-blue));
   }
   
-  .bg-hvac-red {
-    background-color: hsl(var(--hvac-red));
+  .bg-hvac-blue {
+    background-color: hsl(var(--hvac-blue));
   }
   
-  .bg-hvac-yellow {
-    background-color: hsl(var(--hvac-yellow));
+  .bg-hvac-light-blue {
+    background-color: hsl(var(--hvac-light-blue));
   }
   
-  .border-hvac-red {
-    border-color: hsl(var(--hvac-red));
+  .border-hvac-blue {
+    border-color: hsl(var(--hvac-blue));
   }
   
-  .border-hvac-yellow {
-    border-color: hsl(var(--hvac-yellow));
+  .border-hvac-light-blue {
+    border-color: hsl(var(--hvac-light-blue));
   }
 }
 

@@ -25,7 +25,7 @@ const Home = () => {
           <div className="max-w-4xl mx-auto text-center space-y-6">            
             <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white">
               Dallas-Fort Worth's
-              <span className="block text-blue-400">Trusted HVAC Experts</span>
+              <span className="block text-hvac-light-blue">Trusted HVAC Experts</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto">
@@ -36,7 +36,7 @@ const Home = () => {
             <div className="flex justify-center pt-4">
               <Button 
                 size="lg" 
-                className="bg-blue-500 text-white hover:bg-blue-600 text-lg px-8 py-3 h-auto"
+                className="bg-hvac-light-blue text-white hover:bg-hvac-light-blue/90 text-lg px-8 py-3 h-auto"
               >
                 <Phone className="mr-2 h-5 w-5" />
                 Call (214) 555-0123
@@ -59,12 +59,12 @@ const Home = () => {
       <CreativeScheduleTransition />
 
       {/* Enhanced Interactive Schedule Appointment Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-br from-hvac-blue via-hvac-blue to-blue-700 relative overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-32 h-32 bg-blue-300 rounded-full blur-3xl animate-float"></div>
+          <div className="absolute top-10 left-10 w-32 h-32 bg-hvac-light-blue rounded-full blur-3xl animate-float"></div>
           <div className="absolute bottom-10 right-10 w-40 h-40 bg-white rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }}></div>
-          <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-blue-300 rounded-full blur-2xl animate-float" style={{ animationDelay: '1.5s' }}></div>
+          <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-hvac-light-blue rounded-full blur-2xl animate-float" style={{ animationDelay: '1.5s' }}></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -102,8 +102,8 @@ const Home = () => {
               {/* Regular Hours */}
               <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
                 <div className="flex items-center justify-center mb-6">
-                  <div className="bg-blue-500 rounded-full w-16 h-16 flex items-center justify-center">
-                    <Clock className="h-8 w-8 text-white" />
+                  <div className="bg-hvac-light-blue rounded-full w-16 h-16 flex items-center justify-center">
+                    <Clock className="h-8 w-8 text-black" />
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Regular Service Hours</h3>
@@ -124,10 +124,10 @@ const Home = () => {
               </div>
 
               {/* Emergency Hours */}
-              <div className="bg-blue-600 rounded-2xl p-8 shadow-lg text-white">
+              <div className="bg-hvac-blue rounded-2xl p-8 shadow-lg text-white">
                 <div className="flex items-center justify-center mb-6">
-                  <div className="bg-blue-400 rounded-full w-16 h-16 flex items-center justify-center">
-                    <Shield className="h-8 w-8 text-white" />
+                  <div className="bg-hvac-light-blue rounded-full w-16 h-16 flex items-center justify-center">
+                    <Shield className="h-8 w-8 text-black" />
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold mb-6">Emergency Service</h3>
@@ -148,7 +148,7 @@ const Home = () => {
               </p>
               <Button 
                 size="lg" 
-                className="bg-blue-500 text-white hover:bg-blue-600 text-lg px-8 py-3 h-auto font-bold"
+                className="bg-hvac-light-blue text-white hover:bg-hvac-light-blue/90 text-lg px-8 py-3 h-auto font-bold"
               >
                 <Phone className="mr-2 h-5 w-5" />
                 Call (214) 555-0123
@@ -159,7 +159,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-hvac-blue text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Need HVAC Service Today?
@@ -170,7 +170,7 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-blue-500 text-white hover:bg-blue-600 text-lg px-8 py-3 h-auto"
+              className="bg-hvac-light-blue text-white hover:bg-hvac-light-blue/90 text-lg px-8 py-3 h-auto"
             >
               <Phone className="mr-2 h-5 w-5" />
               Call (214) 555-0123
@@ -178,7 +178,7 @@ const Home = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-3 h-auto"
+              className="border-2 border-white text-white hover:bg-white hover:text-hvac-blue text-lg px-8 py-3 h-auto"
             >
               Schedule Online
             </Button>
