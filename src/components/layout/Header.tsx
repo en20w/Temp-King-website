@@ -71,7 +71,7 @@ const Header = () => {
             {/* Center - Logo */}
             <Link to="/" className="flex items-center">
               <img 
-                src="/lovable-uploads/3876ce9e-9680-4dd2-8a15-a07e4a1c4155.png" 
+                src="/lovable-uploads/3a34478a-6ec3-4ec8-b2ba-d58adf9728d6.png" 
                 alt="Temp Kings Air Logo" 
                 className="h-24 w-auto"
               />
