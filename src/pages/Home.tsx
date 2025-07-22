@@ -205,48 +205,64 @@ const Home = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-16">
+      {/* Schedule Appointment Section */}
+      <section className="py-16 bg-gradient-to-br from-hvac-red via-hvac-red to-red-700">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Frequently Asked Questions
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+              Schedule Your Appointment Today
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Common questions about HVAC services and maintenance
+            <p className="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
+              Don't wait for your HVAC problems to get worse. Book your service appointment now and get back to comfort.
             </p>
-          </div>
+            
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div className="flex flex-col items-center">
+                  <div className="bg-hvac-yellow text-black rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                    <Clock className="h-8 w-8" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2">Same-Day Service</h3>
+                  <p className="text-red-100 text-sm">Available for urgent repairs</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="bg-hvac-yellow text-black rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                    <Shield className="h-8 w-8" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2">100% Guarantee</h3>
+                  <p className="text-red-100 text-sm">Satisfaction guaranteed</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="bg-hvac-yellow text-black rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                    <Users className="h-8 w-8" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2">Expert Technicians</h3>
+                  <p className="text-red-100 text-sm">NATE-certified professionals</p>
+                </div>
+              </div>
+            </div>
 
-          <div className="max-w-3xl mx-auto space-y-6">
-            {[
-              {
-                question: "How often should I service my HVAC system?",
-                answer: "We recommend annual maintenance - spring for AC and fall for heating systems."
-              },
-              {
-                question: "What's included in a maintenance visit?",
-                answer: "Filter replacement, system cleaning, inspection of all components, performance testing, and minor adjustments."
-              },
-              {
-                question: "How do I know if I need a new HVAC system?",
-                answer: "Signs include frequent repairs, high energy bills, uneven temperatures, and systems over 10-15 years old."
-              },
-              {
-                question: "Do you offer financing options?",
-                answer: "Yes, we offer flexible financing plans to make HVAC repairs and installations more affordable."
-              },
-              {
-                question: "What brands do you service?",
-                answer: "We service all major HVAC brands including Carrier, Trane, Lennox, Rheem, Goodman, and more."
-              }
-            ].map((faq, index) => (
-              <Card key={index} className="bg-white">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">{faq.question}</h3>
-                  <p className="text-gray-600">{faq.answer}</p>
-                </CardContent>
-              </Card>
-            ))}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                size="lg" 
+                className="bg-hvac-yellow text-black hover:bg-hvac-yellow/90 text-xl px-10 py-4 h-auto font-bold shadow-lg"
+              >
+                <Phone className="mr-3 h-6 w-6" />
+                Call (214) 555-0123
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-2 border-white text-white hover:bg-white hover:text-hvac-red text-xl px-10 py-4 h-auto font-bold"
+              >
+                <Wrench className="mr-3 h-6 w-6" />
+                Schedule Online
+              </Button>
+            </div>
+
+            <p className="text-red-100 mt-6 text-sm">
+              Available 24/7 for emergency services • Free estimates on new installations
+            </p>
           </div>
         </div>
       </section>
