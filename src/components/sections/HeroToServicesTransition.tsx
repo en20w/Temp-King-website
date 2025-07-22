@@ -14,9 +14,9 @@ const HeroToServicesTransition = () => {
         >
           <defs>
             <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" style={{ stopColor: 'hsl(var(--hvac-red))', stopOpacity: 0.8 }} />
-              <stop offset="50%" style={{ stopColor: 'hsl(var(--hvac-yellow))', stopOpacity: 0.6 }} />
-              <stop offset="100%" style={{ stopColor: 'hsl(var(--hvac-red))', stopOpacity: 0.4 }} />
+              <stop offset="0%" style={{ stopColor: '#3b82f6', stopOpacity: 0.8 }} />
+              <stop offset="50%" style={{ stopColor: '#60a5fa', stopOpacity: 0.6 }} />
+              <stop offset="100%" style={{ stopColor: '#1d4ed8', stopOpacity: 0.4 }} />
             </linearGradient>
           </defs>
           <path
@@ -103,7 +103,7 @@ const HeroToServicesTransition = () => {
             </h2>
             
             {/* Animated underline */}
-            <div className="relative mx-auto w-32 h-1 bg-gradient-to-r from-hvac-red to-hvac-yellow rounded-full animate-scale-in" style={{ animationDelay: '0.8s' }}></div>
+            <div className="relative mx-auto w-32 h-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full animate-scale-in" style={{ animationDelay: '0.8s' }}></div>
           </div>
 
           {/* Engaging Subtitle */}
@@ -114,8 +114,8 @@ const HeroToServicesTransition = () => {
 
           {/* Scroll Indicator */}
           <div className="mt-12 animate-bounce">
-            <div className="mx-auto w-6 h-10 border-2 border-hvac-red rounded-full flex justify-center">
-              <div className="w-1 h-3 bg-hvac-red rounded-full mt-2 animate-pulse"></div>
+            <div className="mx-auto w-6 h-10 border-2 border-blue-600 rounded-full flex justify-center">
+              <div className="w-1 h-3 bg-blue-600 rounded-full mt-2 animate-pulse"></div>
             </div>
           </div>
         </div>
