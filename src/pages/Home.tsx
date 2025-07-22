@@ -57,7 +57,7 @@ const Home = () => {
     <div className="space-y-0">
       {/* Hero Section */}
       <section 
-        className="py-60 bg-cover bg-center bg-no-repeat relative"
+        className="min-h-screen bg-cover bg-center bg-no-repeat relative flex items-center"
         style={{ backgroundImage: 'url(/lovable-uploads/625dc519-0486-4cf0-ad9d-f4dc78b88bb6.png)' }}
       >
         <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
