@@ -3,8 +3,13 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, Mail, MapPin, Clock, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { scrollToSection } from '@/utils/scrollUtils';
 
 const Footer = () => {
+  const handleScheduleClick = () => {
+    scrollToSection('schedule-appointment');
+  };
+
   return (
     <footer className="bg-gray-900 text-white">
       {/* Main Footer Content */}
@@ -98,7 +103,11 @@ const Footer = () => {
                 <Phone className="mr-2 h-4 w-4" />
                 Emergency Service
               </Button>
-              <Button variant="outline" className="w-full border-hvac-yellow text-hvac-yellow hover:bg-hvac-yellow hover:text-black">
+              <Button 
+                variant="outline" 
+                className="w-full border-hvac-yellow text-hvac-yellow hover:bg-hvac-yellow hover:text-black"
+                onClick={handleScheduleClick}
+              >
                 Schedule Service
               </Button>
             </div>

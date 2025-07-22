@@ -1,9 +1,9 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Phone, MapPin, Clock, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { scrollToSection } from '@/utils/scrollUtils';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,6 +16,10 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleScheduleClick = () => {
+    scrollToSection('schedule-appointment');
+  };
 
   const navigationItems = [
     {
@@ -95,6 +99,7 @@ const Header = () => {
                   <Button 
                     variant="outline" 
                     className="bg-transparent border-2 border-white text-white hover:bg-teal-600 rounded-full px-6 py-2 font-medium mt-2"
+                    onClick={handleScheduleClick}
                   >
                     SCHEDULE NOW
                   </Button>

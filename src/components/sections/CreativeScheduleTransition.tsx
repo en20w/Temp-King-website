@@ -1,8 +1,12 @@
-
 import React from 'react';
 import { Wrench, Clock, Shield, Settings, Zap, Wind, Phone } from 'lucide-react';
+import { scrollToSection } from '@/utils/scrollUtils';
 
 const CreativeScheduleTransition = () => {
+  const handleScheduleClick = () => {
+    scrollToSection('schedule-appointment');
+  };
+
   return (
     <div className="relative py-16 overflow-hidden">
       {/* Geometric Background Elements */}
@@ -65,7 +69,10 @@ const CreativeScheduleTransition = () => {
 
         {/* Central Call-to-Action */}
         <div className="text-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
-          <div className="inline-flex items-center bg-hvac-yellow text-black px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer group">
+          <div 
+            className="inline-flex items-center bg-hvac-yellow text-black px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer group"
+            onClick={handleScheduleClick}
+          >
             <Phone className="mr-3 h-6 w-6 group-hover:animate-bounce" />
             Ready to Schedule? Let's Get Started!
           </div>
