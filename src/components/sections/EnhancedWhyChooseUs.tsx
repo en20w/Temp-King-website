@@ -96,22 +96,22 @@ const EnhancedWhyChooseUs = () => {
           {/* Animated Statistics */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-hvac-red mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">
                 {counters.years}+
               </div>
-              <div className="text-gray-600 font-medium">Years Experience</div>
+              <div className="text-blue-500 font-medium">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-hvac-red mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">
                 {counters.customers}+
               </div>
-              <div className="text-gray-600 font-medium">Happy Customers</div>
+              <div className="text-blue-500 font-medium">Happy Customers</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-hvac-red mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">
                 {counters.satisfaction}%
               </div>
-              <div className="text-gray-600 font-medium">Satisfaction Rate</div>
+              <div className="text-blue-500 font-medium">Satisfaction Rate</div>
             </div>
           </div>
         </div>
