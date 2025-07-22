@@ -60,7 +60,7 @@ const Header = () => {
                   <div className="text-xs text-blue-200">and Surrounding Areas</div>
                   <Button 
                     variant="outline" 
-                    className="bg-transparent border-2 border-blue-300 text-white hover:bg-blue-800 rounded-full px-6 py-2 font-medium mt-2"
+                    className="bg-transparent border-2 border-white text-white hover:bg-blue-800 rounded-full px-6 py-2 font-medium mt-2"
                   >
                     FINANCING
                   </Button>
@@ -95,7 +95,7 @@ const Header = () => {
                   </div>
                   <Button 
                     variant="outline" 
-                    className="bg-transparent border-2 border-teal-300 text-white hover:bg-teal-600 rounded-full px-6 py-2 font-medium mt-2"
+                    className="bg-transparent border-2 border-white text-white hover:bg-teal-600 rounded-full px-6 py-2 font-medium mt-2"
                   >
                     SCHEDULE NOW
                   </Button>
