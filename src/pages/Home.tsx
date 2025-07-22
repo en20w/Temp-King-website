@@ -367,6 +367,201 @@ const Home = () => {
         </div>
       </section>
 
+      {/* About Us Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                  About HVAC ProService
+                </h2>
+                <p className="text-lg text-gray-600 mb-6">
+                  With over 10 years of experience serving the Dallas-Fort Worth area, HVAC ProService has built a reputation for reliability, quality, and exceptional customer service. Our team of certified technicians is committed to keeping your home comfortable year-round.
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-center">
+                    <div className="bg-hvac-red text-white p-2 rounded-full w-8 h-8 flex items-center justify-center mr-4">
+                      <span className="text-sm font-bold">✓</span>
+                    </div>
+                    <span className="text-gray-700">NATE-certified technicians</span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="bg-hvac-red text-white p-2 rounded-full w-8 h-8 flex items-center justify-center mr-4">
+                      <span className="text-sm font-bold">✓</span>
+                    </div>
+                    <span className="text-gray-700">Upfront, transparent pricing</span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="bg-hvac-red text-white p-2 rounded-full w-8 h-8 flex items-center justify-center mr-4">
+                      <span className="text-sm font-bold">✓</span>
+                    </div>
+                    <span className="text-gray-700">100% satisfaction guarantee</span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="bg-hvac-red text-white p-2 rounded-full w-8 h-8 flex items-center justify-center mr-4">
+                      <span className="text-sm font-bold">✓</span>
+                    </div>
+                    <span className="text-gray-700">Same-day service available</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-8 rounded-lg shadow-lg">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Promise</h3>
+                <p className="text-gray-600 mb-6">
+                  "We treat every home like it's our own. That's why we offer a 100% satisfaction guarantee on all our work."
+                </p>
+                <div className="border-l-4 border-hvac-red pl-4">
+                  <p className="italic text-gray-700 mb-2">
+                    "Quality service, honest pricing, and your complete satisfaction - that's our commitment to you."
+                  </p>
+                  <p className="font-semibold text-gray-900">- Mike Johnson, Owner</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Energy Efficiency Tips Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Energy Efficiency Tips
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Simple ways to reduce your energy bills and extend your HVAC system's life
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Change Your Filters",
+                description: "Replace air filters every 1-3 months to maintain proper airflow and efficiency.",
+                icon: "🔄"
+              },
+              {
+                title: "Program Your Thermostat",
+                description: "Set temperatures back 7-10 degrees when away to save up to 10% on energy bills.",
+                icon: "🌡️"
+              },
+              {
+                title: "Seal Air Leaks",
+                description: "Check windows, doors, and ductwork for leaks that waste conditioned air.",
+                icon: "🔒"
+              },
+              {
+                title: "Regular Maintenance",
+                description: "Annual tune-ups keep your system running efficiently and prevent costly repairs.",
+                icon: "⚙️"
+              },
+              {
+                title: "Upgrade Insulation",
+                description: "Proper insulation reduces the workload on your HVAC system significantly.",
+                icon: "🏠"
+              },
+              {
+                title: "Use Ceiling Fans",
+                description: "Ceiling fans can make you feel 3-4 degrees cooler, allowing higher thermostat settings.",
+                icon: "💨"
+              }
+            ].map((tip, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+                <CardContent className="p-6 text-center">
+                  <div className="text-4xl mb-4">{tip.icon}</div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{tip.title}</h3>
+                  <p className="text-gray-600">{tip.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Brands We Service Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Brands We Service
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Our certified technicians are trained to work on all major HVAC brands
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+            {['Carrier', 'Trane', 'Lennox', 'Rheem', 'Goodman', 'York', 'Amana', 'Bryant', 'Payne', 'Daikin', 'Mitsubishi', 'American Standard'].map((brand, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-sm text-center">
+                <span className="font-semibold text-gray-800">{brand}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <p className="text-gray-600">Don't see your brand? We service all major manufacturers - give us a call!</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Seasonal Tips Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Seasonal HVAC Tips
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Year-round advice to keep your system running smoothly
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                season: "Spring",
+                icon: "🌸",
+                tips: ["Schedule AC tune-up", "Replace air filter", "Check outdoor unit", "Test thermostat"]
+              },
+              {
+                season: "Summer",
+                icon: "☀️",
+                tips: ["Keep vents unobstructed", "Use ceiling fans", "Close blinds during day", "Change filter monthly"]
+              },
+              {
+                season: "Fall",
+                icon: "🍂",
+                tips: ["Schedule heating tune-up", "Check insulation", "Clean around outdoor unit", "Test heating system"]
+              },
+              {
+                season: "Winter",
+                icon: "❄️",
+                tips: ["Keep heat pumps clear", "Change filter regularly", "Check for drafts", "Monitor energy usage"]
+              }
+            ].map((season, index) => (
+              <Card key={index} className="bg-white">
+                <CardContent className="p-6">
+                  <div className="text-center mb-4">
+                    <div className="text-4xl mb-2">{season.icon}</div>
+                    <h3 className="text-xl font-bold text-gray-900">{season.season}</h3>
+                  </div>
+                  <ul className="space-y-2">
+                    {season.tips.map((tip, tipIndex) => (
+                      <li key={tipIndex} className="flex items-start text-sm text-gray-600">
+                        <span className="text-hvac-red mr-2">•</span>
+                        {tip}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-hvac-red text-white">
         <div className="container mx-auto px-4 text-center">
