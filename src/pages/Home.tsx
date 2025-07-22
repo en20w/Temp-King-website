@@ -53,6 +53,77 @@ const Home = () => {
       {/* Enhanced Why Choose Us Section */}
       <EnhancedWhyChooseUs />
 
+      {/* Hours of Operation Section */}
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+              Hours of Operation
+            </h2>
+            <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+              We're here when you need us most. Regular hours for routine service, 24/7 for emergencies.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+              {/* Regular Hours */}
+              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                <div className="flex items-center justify-center mb-6">
+                  <div className="bg-hvac-yellow rounded-full w-16 h-16 flex items-center justify-center">
+                    <Clock className="h-8 w-8 text-black" />
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Regular Service Hours</h3>
+                <div className="space-y-3 text-left">
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-semibold text-gray-700">Monday - Friday</span>
+                    <span className="text-gray-900 font-bold">7:00 AM - 7:00 PM</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-semibold text-gray-700">Saturday</span>
+                    <span className="text-gray-900 font-bold">8:00 AM - 5:00 PM</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2">
+                    <span className="font-semibold text-gray-700">Sunday</span>
+                    <span className="text-gray-900 font-bold">Closed</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Emergency Hours */}
+              <div className="bg-hvac-red rounded-2xl p-8 shadow-lg text-white">
+                <div className="flex items-center justify-center mb-6">
+                  <div className="bg-hvac-yellow rounded-full w-16 h-16 flex items-center justify-center">
+                    <Shield className="h-8 w-8 text-black" />
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold mb-6">Emergency Service</h3>
+                <div className="text-center">
+                  <div className="text-4xl font-bold mb-4">24/7</div>
+                  <p className="text-red-100 mb-4">Available every day of the year</p>
+                  <p className="text-sm text-red-100">
+                    Emergency services include heating failures, cooling system breakdowns, 
+                    and urgent repairs that affect your comfort and safety.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-12 text-center">
+              <p className="text-gray-600 mb-6">
+                <strong>Need service outside regular hours?</strong> Call us anytime for emergency repairs!
+              </p>
+              <Button 
+                size="lg" 
+                className="bg-hvac-yellow text-black hover:bg-hvac-yellow/90 text-lg px-8 py-3 h-auto font-bold"
+              >
+                <Phone className="mr-2 h-5 w-5" />
+                Call (214) 555-0123
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Schedule Appointment Section */}
       <section className="py-16 bg-gradient-to-br from-hvac-red via-hvac-red to-red-700">
         <div className="container mx-auto px-4">
