@@ -236,6 +236,137 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Service Areas Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Service Areas
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Proudly serving the Dallas-Fort Worth metroplex and surrounding areas
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
+            {['Dallas', 'Fort Worth', 'Plano', 'Frisco', 'McKinney', 'Allen', 'Richardson', 'Garland', 'Irving', 'Arlington', 'Grand Prairie', 'Mesquite'].map((city, index) => (
+              <div key={index} className="bg-gray-50 p-4 rounded-lg">
+                <span className="font-semibold text-gray-800">{city}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <p className="text-gray-600">Don't see your city? Call us - we may still be able to help!</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Emergency Services Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                24/7 Emergency HVAC Services
+              </h2>
+              <p className="text-xl text-gray-600">
+                HVAC emergencies don't wait for business hours. Neither do we.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-2xl font-bold mb-4">When to Call for Emergency Service:</h3>
+                <ul className="space-y-3 text-gray-600">
+                  <li className="flex items-start">
+                    <span className="text-hvac-red mr-2">•</span>
+                    No heat during winter months
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-hvac-red mr-2">•</span>
+                    No cooling during extreme heat
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-hvac-red mr-2">•</span>
+                    Gas leaks or unusual odors
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-hvac-red mr-2">•</span>
+                    Electrical issues with HVAC system
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-hvac-red mr-2">•</span>
+                    Water leaks from unit
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-hvac-red mr-2">•</span>
+                    Unusual noises or burning smells
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-hvac-red text-white p-8 rounded-lg text-center">
+                <h3 className="text-2xl font-bold mb-4">Emergency Hotline</h3>
+                <p className="text-4xl font-bold text-hvac-yellow mb-4">(214) 555-0123</p>
+                <p className="text-red-100 mb-6">Available 24/7, 365 days a year</p>
+                <Button 
+                  size="lg" 
+                  className="bg-hvac-yellow text-black hover:bg-hvac-yellow/90 w-full"
+                >
+                  Call Now for Emergency Service
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Common questions about HVAC services and maintenance
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto space-y-6">
+            {[
+              {
+                question: "How often should I service my HVAC system?",
+                answer: "We recommend annual maintenance - spring for AC and fall for heating systems."
+              },
+              {
+                question: "What's included in a maintenance visit?",
+                answer: "Filter replacement, system cleaning, inspection of all components, performance testing, and minor adjustments."
+              },
+              {
+                question: "How do I know if I need a new HVAC system?",
+                answer: "Signs include frequent repairs, high energy bills, uneven temperatures, and systems over 10-15 years old."
+              },
+              {
+                question: "Do you offer financing options?",
+                answer: "Yes, we offer flexible financing plans to make HVAC repairs and installations more affordable."
+              },
+              {
+                question: "What brands do you service?",
+                answer: "We service all major HVAC brands including Carrier, Trane, Lennox, Rheem, Goodman, and more."
+              }
+            ].map((faq, index) => (
+              <Card key={index} className="bg-white">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">{faq.question}</h3>
+                  <p className="text-gray-600">{faq.answer}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-hvac-red text-white">
         <div className="container mx-auto px-4 text-center">
