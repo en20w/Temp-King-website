@@ -15,81 +15,96 @@ const Header = () => {
   ];
 
   return (
-    <div className="border-b">
-      {/* Main Header - Single Row */}
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          {/* Left Section - Location */}
-          <div className="flex items-center">
-            <MapPin className="h-5 w-5 text-theme-blue" />
-            <span className="font-medium ml-1">Pasadena</span>
-            <Link to="/locations" className="ml-2 text-theme-blue hover:underline text-sm">
-              Change Location
-            </Link>
-          </div>
+    <>
+      {/* Top Bar with Location and Phone */}
+      <div className="bg-white border-b">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-20">
+            {/* Left side - Empty space for logo */}
+            <div className="w-52"></div>
 
-          {/* Center Section - Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            {navigationItems.map((item) => (
-              <Link
-                key={item.title}
-                to={item.href}
-                className="text-gray-800 hover:text-theme-blue font-medium transition-colors"
-              >
-                {item.title}
-              </Link>
-            ))}
-          </nav>
-
-          {/* Right Section - Phone & CTA */}
-          <div className="flex items-center space-x-4">
+            {/* Middle - Location */}
             <div className="flex items-center">
-              <Phone className="h-5 w-5 text-theme-blue mr-2" />
-              <a href="tel:(214) 555-0123" className="text-xl font-bold">
-                (214) 555-0123
+              <div className="bg-yellow-400 rounded-full p-1.5 mr-1.5">
+                <MapPin className="h-4 w-4 text-black" />
+              </div>
+              <span className="font-medium">Pasadena</span>
+              <span className="mx-2 text-gray-400">|</span>
+              <Link to="/locations" className="text-red-500 hover:underline text-sm font-medium">
+                Change Location
+              </Link>
+            </div>
+
+            {/* Right side - Phone */}
+            <div className="flex items-center">
+              <Phone className="h-6 w-6 text-theme-blue mr-2" />
+              <a href="tel:(626) 657-3200" className="text-2xl font-bold">
+                (626) 657-3200
               </a>
             </div>
-            <Button className="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-2 uppercase tracking-wide">
-              BOOK NOW
-            </Button>
-          </div>
-
-          {/* Mobile Menu Trigger */}
-          <div className="lg:hidden">
-            <Sheet open={isOpen} onOpenChange={setIsOpen}>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <Menu className="h-6 w-6" />
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="right" className="w-80">
-                <div className="flex flex-col space-y-4 mt-8">
-                  {navigationItems.map((item) => (
-                    <Link
-                      key={item.title}
-                      to={item.href}
-                      className="block text-lg font-medium text-gray-900 hover:text-theme-blue"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {item.title}
-                    </Link>
-                  ))}
-                  
-                  <div className="pt-4 border-t">
-                    <Button 
-                      className="w-full bg-red-600 hover:bg-red-700 text-white"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      BOOK NOW
-                    </Button>
-                  </div>
-                </div>
-              </SheetContent>
-            </Sheet>
           </div>
         </div>
       </div>
-    </div>
+
+      {/* Bottom Bar with Navigation and CTA */}
+      <div className="bg-white border-b">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-end h-16">
+            {/* Right-aligned navigation */}
+            <nav className="hidden lg:flex items-center space-x-8 mr-4">
+              {navigationItems.map((item) => (
+                <Link
+                  key={item.title}
+                  to={item.href}
+                  className="text-gray-800 hover:text-theme-blue font-medium transition-colors"
+                >
+                  {item.title}
+                </Link>
+              ))}
+            </nav>
+
+            {/* CTA Button */}
+            <Button className="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-2 uppercase tracking-wide">
+              BOOK NOW
+            </Button>
+
+            {/* Mobile Menu Trigger */}
+            <div className="lg:hidden ml-4">
+              <Sheet open={isOpen} onOpenChange={setIsOpen}>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon">
+                    <Menu className="h-6 w-6" />
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right" className="w-80">
+                  <div className="flex flex-col space-y-4 mt-8">
+                    {navigationItems.map((item) => (
+                      <Link
+                        key={item.title}
+                        to={item.href}
+                        className="block text-lg font-medium text-gray-900 hover:text-theme-blue"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {item.title}
+                      </Link>
+                    ))}
+                    
+                    <div className="pt-4 border-t">
+                      <Button 
+                        className="w-full bg-red-600 hover:bg-red-700 text-white"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        BOOK NOW
+                      </Button>
+                    </div>
+                  </div>
+                </SheetContent>
+              </Sheet>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
