@@ -85,21 +85,21 @@ const Home = () => {
           </div>
         </div>
         
-        {/* Arrow-shaped bottom border with diagonal stripes */}
+        {/* Curved bottom border with diagonal stripes */}
         <div className="absolute bottom-0 left-0 right-0 h-20 overflow-hidden">
           <div className="relative w-full h-full">
-            {/* Orange section with arrow shape */}
+            {/* Orange section with curved shape */}
             <div 
               className="absolute inset-0 bg-orange-400"
               style={{
-                clipPath: 'polygon(0 0, 100% 0, 50% 100%)'
+                clipPath: 'ellipse(150% 100% at 50% 0%)'
               }}
             ></div>
             {/* Diagonal white stripes */}
             <div 
               className="absolute inset-0 opacity-30"
               style={{
-                clipPath: 'polygon(0 0, 100% 0, 50% 100%)',
+                clipPath: 'ellipse(150% 100% at 50% 0%)',
                 background: `repeating-linear-gradient(
                   45deg,
                   transparent,
