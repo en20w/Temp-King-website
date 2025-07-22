@@ -63,8 +63,8 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				'hvac-blue': 'hsl(var(--hvac-blue))',
-				'hvac-light-blue': 'hsl(var(--hvac-light-blue))'
+				'hvac-red': '#DC2626',
+				'hvac-yellow': '#F59E0B'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
