@@ -50,7 +50,7 @@ const Header = () => {
         isScrolled ? 'shadow-lg' : 'shadow-sm'
       }`} style={{backgroundColor: '#004094'}}>
         <div className="max-w-7xl mx-auto px-8">
-          <div className="flex items-center justify-between h-32">
+          <div className="flex items-center justify-between h-36">
             {/* Left Section - Location + Financing */}
             <div className="flex items-center space-x-6">
               <div className="flex items-center text-white">
