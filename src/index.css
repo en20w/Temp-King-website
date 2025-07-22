@@ -132,7 +132,80 @@ All colors MUST be HSL.
   }
 }
 
-/* Floating Animations */
+/* Enhanced Bouncing Animations */
+@keyframes bounce-1 {
+  0%, 100% {
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translateX(15px) translateY(-20px) rotate(90deg) scale(1.1);
+  }
+  50% {
+    transform: translateX(30px) translateY(-10px) rotate(180deg) scale(1);
+  }
+  75% {
+    transform: translateX(15px) translateY(-30px) rotate(270deg) scale(0.9);
+  }
+}
+
+@keyframes bounce-2 {
+  0%, 100% {
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1);
+  }
+  33% {
+    transform: translateX(-20px) translateY(-25px) rotate(120deg) scale(1.1);
+  }
+  66% {
+    transform: translateX(10px) translateY(-15px) rotate(240deg) scale(0.9);
+  }
+}
+
+@keyframes bounce-3 {
+  0%, 100% {
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1);
+  }
+  20% {
+    transform: translateX(-10px) translateY(-20px) rotate(72deg) scale(1.05);
+  }
+  40% {
+    transform: translateX(20px) translateY(-30px) rotate(144deg) scale(0.95);
+  }
+  60% {
+    transform: translateX(-15px) translateY(-10px) rotate(216deg) scale(1.1);
+  }
+  80% {
+    transform: translateX(5px) translateY(-25px) rotate(288deg) scale(0.9);
+  }
+}
+
+@keyframes bounce-4 {
+  0%, 100% {
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1);
+  }
+  12.5% {
+    transform: translateX(8px) translateY(-12px) rotate(45deg) scale(1.05);
+  }
+  25% {
+    transform: translateX(0px) translateY(-25px) rotate(90deg) scale(1.1);
+  }
+  37.5% {
+    transform: translateX(-8px) translateY(-12px) rotate(135deg) scale(0.95);
+  }
+  50% {
+    transform: translateX(-15px) translateY(0px) rotate(180deg) scale(1);
+  }
+  62.5% {
+    transform: translateX(-8px) translateY(12px) rotate(225deg) scale(1.05);
+  }
+  75% {
+    transform: translateX(0px) translateY(20px) rotate(270deg) scale(0.9);
+  }
+  87.5% {
+    transform: translateX(8px) translateY(12px) rotate(315deg) scale(1.05);
+  }
+}
+
+/* Original float animations - keeping for any other uses */
 @keyframes float-1 {
   0%, 100% {
     transform: translateY(0px) rotate(0deg);
@@ -170,6 +243,22 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
+  .animate-bounce-1 {
+    animation: bounce-1 8s ease-in-out infinite;
+  }
+
+  .animate-bounce-2 {
+    animation: bounce-2 10s ease-in-out infinite;
+  }
+
+  .animate-bounce-3 {
+    animation: bounce-3 12s ease-in-out infinite;
+  }
+
+  .animate-bounce-4 {
+    animation: bounce-4 14s ease-in-out infinite;
+  }
+
   .animate-float-1 {
     animation: float-1 6s ease-in-out infinite;
   }

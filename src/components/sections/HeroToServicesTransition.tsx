@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Snowflake, Flame, Wrench, Cog } from 'lucide-react';
+import { Snowflake, Flame, Wrench, Cog, Thermometer, Fan, Zap, Settings, Wind, Shield, Clock, Home } from 'lucide-react';
 
 const HeroToServicesTransition = () => {
   return (
@@ -26,18 +26,49 @@ const HeroToServicesTransition = () => {
         </svg>
       </div>
 
-      {/* Floating HVAC Icons */}
+      {/* Enhanced Floating HVAC Icons */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="animate-float-1 absolute top-8 left-1/4">
+        {/* First row of icons */}
+        <div className="animate-bounce-1 absolute top-4 left-1/6" style={{ animationDelay: '0s' }}>
           <Snowflake className="h-12 w-12 text-blue-400/30" />
         </div>
-        <div className="animate-float-2 absolute top-16 right-1/3">
+        <div className="animate-bounce-2 absolute top-8 left-1/2" style={{ animationDelay: '2s' }}>
+          <Thermometer className="h-10 w-10 text-slate-400/30" />
+        </div>
+        <div className="animate-bounce-3 absolute top-6 right-1/6" style={{ animationDelay: '4s' }}>
+          <Fan className="h-11 w-11 text-blue-300/30" />
+        </div>
+
+        {/* Second row of icons */}
+        <div className="animate-bounce-4 absolute top-16 left-1/4" style={{ animationDelay: '1s' }}>
           <Flame className="h-10 w-10 text-red-500/30" />
         </div>
-        <div className="animate-float-3 absolute top-6 left-2/3">
+        <div className="animate-bounce-1 absolute top-20 right-1/3" style={{ animationDelay: '3s' }}>
+          <Zap className="h-9 w-9 text-yellow-400/30" />
+        </div>
+        <div className="animate-bounce-2 absolute top-14 right-1/5" style={{ animationDelay: '5s' }}>
+          <Wind className="h-8 w-8 text-cyan-300/30" />
+        </div>
+
+        {/* Third row of icons */}
+        <div className="animate-bounce-3 absolute top-24 left-1/8" style={{ animationDelay: '2.5s' }}>
+          <Settings className="h-9 w-9 text-slate-400/30" />
+        </div>
+        <div className="animate-bounce-4 absolute top-22 left-2/3" style={{ animationDelay: '4.5s' }}>
           <Wrench className="h-8 w-8 text-slate-400/30" />
         </div>
-        <div className="animate-float-1 absolute top-20 right-1/4">
+        <div className="animate-bounce-1 absolute top-28 right-1/4" style={{ animationDelay: '1.5s' }}>
+          <Shield className="h-10 w-10 text-green-400/30" />
+        </div>
+
+        {/* Fourth row of icons */}
+        <div className="animate-bounce-2 absolute top-32 left-1/3" style={{ animationDelay: '3.5s' }}>
+          <Clock className="h-8 w-8 text-yellow-500/30" />
+        </div>
+        <div className="animate-bounce-3 absolute top-30 right-1/8" style={{ animationDelay: '0.5s' }}>
+          <Home className="h-9 w-9 text-gray-400/30" />
+        </div>
+        <div className="animate-bounce-4 absolute top-26 left-3/4" style={{ animationDelay: '2.8s' }}>
           <Cog className="h-14 w-14 text-slate-400/30" />
         </div>
       </div>
