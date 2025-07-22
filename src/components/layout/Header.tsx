@@ -88,8 +88,8 @@ const Header = () => {
                 <div>
                   <div className="text-orange-400 font-medium text-sm">24/7 Emergency Services</div>
                   <div className="font-medium text-sm">
-                    <a href="tel:(214) 555-0123" className="hover:text-hvac-yellow">
-                      (214) 555-0123
+                    <a href="tel:626-400-5300" className="hover:text-hvac-yellow">
+                      626-400-5300
                     </a>
                   </div>
                   <Button 
