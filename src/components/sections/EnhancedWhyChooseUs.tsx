@@ -57,8 +57,8 @@ const EnhancedWhyChooseUs = () => {
       title: '24/7 Emergency Service',
       description: 'Available around the clock for urgent HVAC repairs and emergencies',
       metric: 'Response in 30 mins',
-      color: 'bg-hvac-red',
-      hoverColor: 'hover:bg-red-600'
+      color: 'bg-blue-600',
+      hoverColor: 'hover:bg-blue-700'
     },
     {
       icon: Shield,
@@ -73,8 +73,8 @@ const EnhancedWhyChooseUs = () => {
       title: 'Expert Technicians',
       description: 'Highly trained professionals with years of HVAC experience',
       metric: 'NATE Certified',
-      color: 'bg-hvac-red',
-      hoverColor: 'hover:bg-red-600'
+      color: 'bg-blue-600',
+      hoverColor: 'hover:bg-blue-700'
     }
   ];
 
@@ -83,7 +83,7 @@ const EnhancedWhyChooseUs = () => {
       {/* Background with subtle pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100"></div>
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-10 left-10 w-32 h-32 bg-hvac-red rounded-full blur-3xl"></div>
+        <div className="absolute top-10 left-10 w-32 h-32 bg-blue-600 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 right-10 w-40 h-40 bg-hvac-yellow rounded-full blur-3xl"></div>
       </div>
 
@@ -139,7 +139,7 @@ const EnhancedWhyChooseUs = () => {
                   <feature.icon className="h-10 w-10 transition-transform duration-300 group-hover:scale-110" />
                 </div>
 
-                <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-hvac-red transition-colors duration-300">
+                <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
                   {feature.title}
                 </h3>
                 
@@ -157,7 +157,7 @@ const EnhancedWhyChooseUs = () => {
                 <div className="mt-6">
                   <div className="w-full bg-gray-200 rounded-full h-1 overflow-hidden">
                     <div 
-                      className="h-full bg-hvac-red transition-all duration-1000 ease-out"
+                      className="h-full bg-blue-600 transition-all duration-1000 ease-out"
                       style={{ 
                         width: isVisible ? '100%' : '0%',
                         transitionDelay: `${index * 300 + 500}ms`
@@ -169,7 +169,7 @@ const EnhancedWhyChooseUs = () => {
 
               {/* Floating Elements */}
               <div className="absolute -top-2 -right-2 w-6 h-6 bg-hvac-yellow rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-bounce transition-all duration-300"></div>
-              <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-hvac-red rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-all duration-300"></div>
+              <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-blue-600 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-all duration-300"></div>
             </div>
           ))}
         </div>
@@ -186,7 +186,7 @@ const EnhancedWhyChooseUs = () => {
               key={index}
               className="flex items-center justify-center bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300"
             >
-              <indicator.icon className="h-5 w-5 text-hvac-red mr-2" />
+              <indicator.icon className="h-5 w-5 text-blue-600 mr-2" />
               <span className="text-sm font-medium text-gray-700">{indicator.text}</span>
             </div>
           ))}
