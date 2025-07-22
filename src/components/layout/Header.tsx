@@ -68,7 +68,7 @@ const Header = () => {
       </div>
 
       {/* Main Header */}
-      <header className={`sticky top-0 z-50 bg-white border-b transition-all duration-300 ${
+      <header className={`sticky top-0 z-50 bg-blue-900 border-b transition-all duration-300 ${
         isScrolled ? 'shadow-lg' : 'shadow-sm'
       }`}>
         <div className="container mx-auto px-4">
@@ -79,8 +79,8 @@ const Header = () => {
                 <span className="font-bold text-xl">HVAC</span>
               </div>
               <div className="hidden sm:block">
-                <div className="font-bold text-xl text-gray-900">ProService</div>
-                <div className="text-sm text-gray-600">Professional HVAC Solutions</div>
+                <div className="font-bold text-xl text-white">ProService</div>
+                <div className="text-sm text-blue-200">Professional HVAC Solutions</div>
               </div>
             </Link>
 
@@ -90,7 +90,7 @@ const Header = () => {
                 <div key={item.title} className="relative group">
                   <Link
                     to={item.href}
-                    className="flex items-center text-gray-700 hover:text-hvac-red font-medium transition-colors"
+                    className="flex items-center text-white hover:text-hvac-yellow font-medium transition-colors"
                   >
                     {item.title}
                     {item.submenu && <ChevronDown className="ml-1 h-4 w-4" />}
@@ -117,7 +117,7 @@ const Header = () => {
 
             {/* CTA Buttons */}
             <div className="hidden md:flex items-center space-x-3">
-              <Button variant="outline" className="border-hvac-red text-hvac-red hover:bg-hvac-red hover:text-white">
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900">
                 <Phone className="mr-2 h-4 w-4" />
                 Call Now
               </Button>
@@ -129,7 +129,7 @@ const Header = () => {
             {/* Mobile Menu */}
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild className="lg:hidden">
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className="text-white hover:bg-blue-800">
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
