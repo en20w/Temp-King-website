@@ -14,14 +14,25 @@ const HeroToServicesTransition = () => {
         >
           <defs>
             <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" style={{ stopColor: '#3b82f6', stopOpacity: 0.8 }} />
-              <stop offset="50%" style={{ stopColor: '#60a5fa', stopOpacity: 0.6 }} />
-              <stop offset="100%" style={{ stopColor: '#1d4ed8', stopOpacity: 0.4 }} />
+              <stop offset="0%" style={{ stopColor: '#1e40af', stopOpacity: 0.9 }} />
+              <stop offset="25%" style={{ stopColor: '#3b82f6', stopOpacity: 0.8 }} />
+              <stop offset="50%" style={{ stopColor: '#60a5fa', stopOpacity: 0.7 }} />
+              <stop offset="75%" style={{ stopColor: '#93c5fd', stopOpacity: 0.6 }} />
+              <stop offset="100%" style={{ stopColor: '#dbeafe', stopOpacity: 0.5 }} />
+            </linearGradient>
+            <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style={{ stopColor: '#1e40af', stopOpacity: 0.3 }} />
+              <stop offset="100%" style={{ stopColor: '#93c5fd', stopOpacity: 0.1 }} />
             </linearGradient>
           </defs>
           <path
             d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
             fill="url(#waveGradient)"
+          />
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            fill="url(#waveGradient2)"
+            transform="translate(0, -10)"
           />
         </svg>
       </div>
@@ -103,7 +114,7 @@ const HeroToServicesTransition = () => {
             </h2>
             
             {/* Animated underline */}
-            <div className="relative mx-auto w-32 h-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full animate-scale-in" style={{ animationDelay: '0.8s' }}></div>
+            <div className="relative mx-auto w-32 h-1 bg-gradient-to-r from-blue-800 via-blue-600 to-blue-400 rounded-full animate-scale-in shadow-lg shadow-blue-500/50" style={{ animationDelay: '0.8s' }}></div>
           </div>
 
           {/* Engaging Subtitle */}
@@ -121,8 +132,9 @@ const HeroToServicesTransition = () => {
         </div>
       </div>
 
-      {/* Background Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-gray-50/50 pointer-events-none"></div>
+      {/* Enhanced Background Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-blue-50/70 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-transparent to-blue-600/5 pointer-events-none"></div>
     </div>
   );
 };
