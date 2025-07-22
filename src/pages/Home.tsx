@@ -4,6 +4,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Star, Clock, Shield, Users, Wrench } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ServicesSection from '@/components/sections/ServicesSection';
+import HeroToServicesTransition from '@/components/sections/HeroToServicesTransition';
+import FloatingAnimations from '@/components/animations/FloatingAnimations';
 
 const Home = () => {
   const reviews = [
@@ -29,6 +31,8 @@ const Home = () => {
 
   return (
     <div className="space-y-0">
+      <FloatingAnimations />
+      
       {/* Hero Section */}
       <section 
         className="h-[70vh] bg-cover bg-center bg-no-repeat relative flex items-center"
@@ -60,7 +64,10 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Services Section - Using new component */}
+      {/* Creative Transition */}
+      <HeroToServicesTransition />
+
+      {/* Services Section - Using updated component without header */}
       <ServicesSection />
 
       {/* Why Choose Us Section */}

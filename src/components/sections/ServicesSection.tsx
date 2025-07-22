@@ -48,7 +48,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50 relative overflow-hidden">
+    <section className="py-0 pb-16 bg-gray-50 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-32 h-32 bg-hvac-red rounded-full blur-3xl"></div>
@@ -56,15 +56,6 @@ const ServicesSection = () => {
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Our HVAC Services
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Comprehensive heating, cooling, and air quality solutions for your home or business
-          </p>
-        </div>
-
         {/* Hexagonal Grid Container */}
         <div className="relative max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
