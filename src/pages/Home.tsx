@@ -85,13 +85,27 @@ const Home = () => {
           </div>
         </div>
         
-        {/* Bottom border design */}
+        {/* Bottom border design with diagonal stripes */}
         <div className="absolute bottom-0 left-0 right-0 h-16 overflow-hidden">
-          <img 
-            src="/lovable-uploads/7f2b65e4-ee17-4fd2-825f-7697d1cd42cd.png" 
-            alt="" 
-            className="w-full h-full object-cover object-center"
-          />
+          <div className="relative w-full h-full">
+            {/* Orange background */}
+            <div className="absolute inset-0 bg-orange-400"></div>
+            {/* Diagonal white stripes */}
+            <div 
+              className="absolute inset-0 opacity-30"
+              style={{
+                background: `repeating-linear-gradient(
+                  45deg,
+                  transparent,
+                  transparent 8px,
+                  white 8px,
+                  white 16px
+                )`
+              }}
+            ></div>
+            {/* Light blue/teal top section */}
+            <div className="absolute top-0 left-0 right-0 h-4 bg-teal-200"></div>
+          </div>
         </div>
       </section>
 
