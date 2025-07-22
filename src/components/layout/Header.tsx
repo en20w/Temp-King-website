@@ -51,142 +51,137 @@ const Header = () => {
       }`}>
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex items-center justify-between h-24">
-            {/* Logo */}
+            {/* Left Section - Location + Financing */}
+            <div className="flex items-center space-x-6">
+              <div className="flex items-center text-white">
+                <MapPin className="h-5 w-5 mr-2" />
+                <div>
+                  <div className="font-medium text-sm">Serving Dallas-Fort Worth</div>
+                  <div className="text-xs text-blue-200">and Surrounding Areas</div>
+                </div>
+              </div>
+              <Button 
+                variant="outline" 
+                className="bg-transparent border-2 border-blue-300 text-white hover:bg-blue-800 rounded-full px-6 py-2 font-medium"
+              >
+                FINANCING
+              </Button>
+            </div>
+
+            {/* Center - Logo */}
             <Link to="/" className="flex items-center space-x-3">
               <img 
                 src="/lovable-uploads/3876ce9e-9680-4dd2-8a15-a07e4a1c4155.png" 
                 alt="Temp Kings Air Logo" 
-                className="h-14 w-auto"
+                className="h-16 w-auto"
               />
-              <div className="hidden sm:block flex flex-col justify-center">
-                <div className="font-bold text-xl text-white leading-tight">Temp Kings Air</div>
-                <div className="text-sm text-blue-200 leading-tight">Rule Your Comfort</div>
+              <div className="flex flex-col justify-center">
+                <div className="font-bold text-2xl text-white leading-tight">TEMP KINGS AIR</div>
+                <div className="text-sm text-blue-200 leading-tight tracking-wide">HEATING AND AIR</div>
               </div>
             </Link>
 
-            {/* Center - Navigation + Info */}
-            <div className="hidden lg:flex items-center space-x-8">
-              {/* Emergency Info */}
-              <div className="flex items-center space-x-4 text-sm text-blue-200">
-                <div className="flex items-center gap-1">
-                  <Clock className="h-4 w-4" />
-                  <span>24/7 Emergency</span>
-                </div>
-                <div className="flex items-center gap-1">
-                  <MapPin className="h-4 w-4" />
-                  <span>Dallas-Fort Worth</span>
+            {/* Right Section - Emergency Info + Schedule Button */}
+            <div className="flex items-center space-x-6">
+              <div className="text-white text-right">
+                <div className="text-orange-400 font-bold text-sm">24/7 Emergency Services</div>
+                <div className="flex items-center justify-end mt-1">
+                  <Phone className="h-4 w-4 mr-2" />
+                  <a href="tel:(214) 555-0123" className="font-bold text-lg hover:text-hvac-yellow">
+                    (214) 555-0123
+                  </a>
                 </div>
               </div>
-              
-              {/* Navigation */}
-              <nav className="flex items-center space-x-6">
-                {navigationItems.map((item) => (
-                  <div key={item.title} className="relative group">
-                    <Link
-                      to={item.href}
-                      className="flex items-center text-white hover:text-hvac-yellow font-medium transition-colors"
-                    >
-                      {item.title}
-                      {item.submenu && <ChevronDown className="ml-1 h-4 w-4" />}
-                    </Link>
-                    
-                    {item.submenu && (
-                      <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                        <div className="py-2">
-                          {item.submenu.map((subItem) => (
-                            <Link
-                              key={subItem.title}
-                              to={subItem.href}
-                              className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-hvac-red transition-colors"
-                            >
-                              {subItem.title}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </nav>
-            </div>
-
-            {/* Right - Phone + CTA Buttons */}
-            <div className="flex items-center space-x-3">
-              <div className="hidden md:flex items-center gap-2 text-white text-sm">
-                <Phone className="h-4 w-4" />
-                <a href="tel:(214) 555-0123" className="font-semibold hover:text-hvac-yellow">
-                  (214) 555-0123
-                </a>
-              </div>
-              <Button className="hidden md:block bg-hvac-yellow text-black hover:bg-hvac-yellow/90">
-                Book Service
+              <Button 
+                className="bg-teal-500 hover:bg-teal-600 text-white rounded-full px-8 py-3 font-bold text-sm"
+              >
+                SCHEDULE NOW
               </Button>
-
-              {/* Mobile Menu */}
-              <Sheet open={isOpen} onOpenChange={setIsOpen}>
-                <SheetTrigger asChild className="lg:hidden">
-                  <Button variant="ghost" size="icon" className="text-white hover:bg-blue-800">
-                    <Menu className="h-6 w-6" />
-                  </Button>
-                </SheetTrigger>
-                <SheetContent side="right" className="w-80">
-                  <div className="flex flex-col space-y-4 mt-8">
-                    {/* Mobile Info */}
-                    <div className="pb-4 border-b">
-                      <div className="flex items-center gap-2 mb-2">
-                        <Phone className="h-4 w-4" />
-                        <a href="tel:(214) 555-0123" className="font-semibold">
-                          (214) 555-0123
-                        </a>
-                      </div>
-                      <div className="flex items-center gap-1 text-sm text-gray-600">
-                        <Clock className="h-4 w-4" />
-                        <span>24/7 Emergency Service</span>
-                      </div>
-                      <div className="flex items-center gap-1 text-sm text-gray-600">
-                        <MapPin className="h-4 w-4" />
-                        <span>Serving Dallas-Fort Worth</span>
-                      </div>
-                    </div>
-
-                    {navigationItems.map((item) => (
-                      <div key={item.title} className="space-y-2">
-                        <Link
-                          to={item.href}
-                          className="block text-lg font-medium text-gray-900 hover:text-hvac-red"
-                          onClick={() => setIsOpen(false)}
-                        >
-                          {item.title}
-                        </Link>
-                        {item.submenu && (
-                          <div className="ml-4 space-y-2">
-                            {item.submenu.map((subItem) => (
-                              <Link
-                                key={subItem.title}
-                                to={subItem.href}
-                                className="block text-gray-600 hover:text-hvac-red"
-                                onClick={() => setIsOpen(false)}
-                              >
-                                {subItem.title}
-                              </Link>
-                            ))}
-                          </div>
-                        )}
-                      </div>
-                    ))}
-                    
-                    <div className="pt-4 border-t space-y-3">
-                      <Button 
-                        className="w-full bg-hvac-yellow text-black hover:bg-hvac-yellow/90"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        Book Service
-                      </Button>
-                    </div>
-                  </div>
-                </SheetContent>
-              </Sheet>
             </div>
+          </div>
+
+          {/* Navigation Bar */}
+          <div className="border-t border-blue-800">
+            <nav className="flex items-center justify-center space-x-12 py-4">
+              <Link
+                to="/services/heating"
+                className="text-white hover:text-hvac-yellow font-bold text-sm tracking-wide transition-colors"
+              >
+                HEATING
+              </Link>
+              <Link
+                to="/services/cooling"
+                className="text-white hover:text-hvac-yellow font-bold text-sm tracking-wide transition-colors"
+              >
+                COOLING
+              </Link>
+              <Link
+                to="/services/maintenance"
+                className="text-white hover:text-hvac-yellow font-bold text-sm tracking-wide transition-colors"
+              >
+                MAINTENANCE PLAN
+              </Link>
+              
+              <div className="relative group">
+                <button className="flex items-center text-white hover:text-hvac-yellow font-bold text-sm tracking-wide transition-colors">
+                  SPECIALS
+                  <ChevronDown className="ml-1 h-4 w-4" />
+                </button>
+                <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <div className="py-2">
+                    <Link
+                      to="/specials/current"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-hvac-red transition-colors"
+                    >
+                      Current Offers
+                    </Link>
+                    <Link
+                      to="/specials/financing"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-hvac-red transition-colors"
+                    >
+                      Financing Options
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <Link
+                to="/areas"
+                className="text-white hover:text-hvac-yellow font-bold text-sm tracking-wide transition-colors"
+              >
+                SERVICE AREA
+              </Link>
+              
+              <div className="relative group">
+                <button className="flex items-center text-white hover:text-hvac-yellow font-bold text-sm tracking-wide transition-colors">
+                  ABOUT
+                  <ChevronDown className="ml-1 h-4 w-4" />
+                </button>
+                <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <div className="py-2">
+                    <Link
+                      to="/about"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-hvac-red transition-colors"
+                    >
+                      Our Company
+                    </Link>
+                    <Link
+                      to="/reviews"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-hvac-red transition-colors"
+                    >
+                      Reviews
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <Link
+                to="/contact"
+                className="text-white hover:text-hvac-yellow font-bold text-sm tracking-wide transition-colors"
+              >
+                CONTACT
+              </Link>
+            </nav>
           </div>
         </div>
       </header>
