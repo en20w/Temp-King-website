@@ -150,12 +150,10 @@ const ServicesSection = () => {
                     </div>
 
                     {/* Floating Details Popup (positioned on left/right sides) */}
-                    <div className={`absolute top-1/2 ${
-                      index % 2 === 0 ? '-left-4 -translate-x-full' : '-right-4 translate-x-full'
-                    } -translate-y-1/2 w-80 z-20 transition-all duration-500 ${
-                      isHovered ? 'opacity-100 translate-x-0 pointer-events-auto' : `opacity-0 ${
-                        index % 2 === 0 ? 'translate-x-4' : '-translate-x-4'
-                      } pointer-events-none`
+                    <div className={`absolute top-1/2 -translate-y-1/2 w-80 z-20 transition-all duration-500 ${
+                      index % 2 === 0 
+                        ? `right-full mr-6 ${isHovered ? 'opacity-100 pointer-events-auto' : 'opacity-0 translate-x-4 pointer-events-none'}` 
+                        : `left-full ml-6 ${isHovered ? 'opacity-100 pointer-events-auto' : 'opacity-0 -translate-x-4 pointer-events-none'}`
                     }`}>
                       <div className="relative">
                         {/* Elegant backdrop with glass effect */}
