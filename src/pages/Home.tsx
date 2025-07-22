@@ -84,6 +84,15 @@ const Home = () => {
             </div>
           </div>
         </div>
+        
+        {/* Bottom border design */}
+        <div className="absolute bottom-0 left-0 right-0 h-16 overflow-hidden">
+          <img 
+            src="/lovable-uploads/7f2b65e4-ee17-4fd2-825f-7697d1cd42cd.png" 
+            alt="" 
+            className="w-full h-full object-cover object-center"
+          />
+        </div>
       </section>
 
       {/* Services Section */}
