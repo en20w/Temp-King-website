@@ -77,7 +77,7 @@ const Header = () => {
               />
               <div className="flex flex-col items-center">
                 <div className="font-bold text-2xl text-white leading-tight">TEMP KINGS AIR</div>
-                <div className="text-sm text-blue-200 leading-tight tracking-wide mt-1">HEATING AND AIR</div>
+                <div className="text-sm text-blue-200 leading-tight tracking-wide mt-1">Rule your comfort</div>
               </div>
             </Link>
 
