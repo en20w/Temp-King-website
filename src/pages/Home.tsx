@@ -85,15 +85,21 @@ const Home = () => {
           </div>
         </div>
         
-        {/* Bottom border design with diagonal stripes */}
-        <div className="absolute bottom-0 left-0 right-0 h-16 overflow-hidden">
+        {/* Arrow-shaped bottom border with diagonal stripes */}
+        <div className="absolute bottom-0 left-0 right-0 h-20 overflow-hidden">
           <div className="relative w-full h-full">
-            {/* Orange background */}
-            <div className="absolute inset-0 bg-orange-400"></div>
+            {/* Orange section with arrow shape */}
+            <div 
+              className="absolute inset-0 bg-orange-400"
+              style={{
+                clipPath: 'polygon(0 0, 100% 0, 50% 100%)'
+              }}
+            ></div>
             {/* Diagonal white stripes */}
             <div 
               className="absolute inset-0 opacity-30"
               style={{
+                clipPath: 'polygon(0 0, 100% 0, 50% 100%)',
                 background: `repeating-linear-gradient(
                   45deg,
                   transparent,
@@ -103,8 +109,13 @@ const Home = () => {
                 )`
               }}
             ></div>
-            {/* Light blue/teal top section */}
-            <div className="absolute top-0 left-0 right-0 h-4 bg-teal-200"></div>
+            {/* Light blue/teal top section with arrow shape */}
+            <div 
+              className="absolute top-0 left-0 right-0 h-6 bg-teal-200"
+              style={{
+                clipPath: 'polygon(0 0, 100% 0, 50% 100%)'
+              }}
+            ></div>
           </div>
         </div>
       </section>
