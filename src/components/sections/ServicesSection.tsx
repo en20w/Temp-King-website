@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Snowflake, Flame, Wrench, Cog, ArrowRight, Phone } from 'lucide-react';
+import { Snowflake, Flame, Wrench, Cog, ArrowRight, Phone, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const ServicesSection = () => {
@@ -15,7 +15,7 @@ const ServicesSection = () => {
       icon: Snowflake,
       link: '/services/ac-repair',
       gradient: 'from-blue-500 to-cyan-400',
-      details: 'Emergency repairs • Same-day service • All brands',
+      details: ['Emergency repairs available', 'Same-day service guarantee', 'All major brands serviced'],
       price: 'Starting at $89'
     },
     {
@@ -24,7 +24,7 @@ const ServicesSection = () => {
       icon: Flame,
       link: '/services/heating-repair',
       gradient: 'from-red-500 to-orange-400',
-      details: 'Furnace repair • Heat pump service • Boiler maintenance',
+      details: ['Furnace repair & service', 'Heat pump maintenance', 'Boiler system repair'],
       price: 'Starting at $99'
     },
     {
@@ -33,7 +33,7 @@ const ServicesSection = () => {
       icon: Wrench,
       link: '/services/installation',
       gradient: 'from-green-500 to-emerald-400',
-      details: 'New systems • Upgrades • Energy efficient options',
+      details: ['New system installations', 'Energy efficient upgrades', 'Complete system replacements'],
       price: 'Free estimates'
     },
     {
@@ -42,7 +42,7 @@ const ServicesSection = () => {
       icon: Cog,
       link: '/services/maintenance',
       gradient: 'from-purple-500 to-violet-400',
-      details: 'Annual tune-ups • Filter changes • Preventive care',
+      details: ['Annual tune-up services', 'Filter replacement programs', 'Preventive care plans'],
       price: 'Plans from $12/mo'
     }
   ];
@@ -129,13 +129,33 @@ const ServicesSection = () => {
                         {service.description}
                       </p>
 
-                      {/* Expandable Details */}
+                      {/* Enhanced Expandable Details */}
                       <div className={`transition-all duration-500 overflow-hidden ${
-                        isHovered ? 'max-h-32 opacity-100' : 'max-h-0 opacity-0'
+                        isHovered ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
                       }`}>
-                        <div className="bg-gray-50 rounded-lg p-3 mb-3">
-                          <p className="text-sm text-gray-700 font-medium">{service.details}</p>
-                          <p className="text-sm text-hvac-red font-bold mt-1">{service.price}</p>
+                        <div className="relative">
+                          {/* Elegant backdrop with glass effect */}
+                          <div 
+                            className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-10 rounded-xl blur-sm`}
+                          />
+                          <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 mb-3 border border-white/20 shadow-lg">
+                            {/* Service details with icons */}
+                            <div className="space-y-2 mb-3">
+                              {service.details.map((detail, detailIndex) => (
+                                <div key={detailIndex} className="flex items-center text-sm text-gray-700">
+                                  <Star className="h-3 w-3 text-hvac-yellow mr-2 flex-shrink-0" />
+                                  <span className="font-medium">{detail}</span>
+                                </div>
+                              ))}
+                            </div>
+                            
+                            {/* Enhanced pricing display */}
+                            <div className="flex items-center justify-center">
+                              <div className={`bg-gradient-to-r ${service.gradient} text-white px-4 py-2 rounded-full text-sm font-bold shadow-md`}>
+                                {service.price}
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
 
@@ -147,7 +167,7 @@ const ServicesSection = () => {
                           <Button 
                             variant="outline" 
                             size="sm"
-                            className="border-hvac-red text-hvac-red hover:bg-hvac-red hover:text-white group"
+                            className="border-hvac-red text-hvac-red hover:bg-hvac-red hover:text-white group transition-all duration-300"
                           >
                             Learn More
                             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
