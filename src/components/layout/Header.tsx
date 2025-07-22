@@ -48,7 +48,7 @@ const Header = () => {
       {/* Main Header */}
       <header className={`sticky top-0 z-50 border-b transition-all duration-300 ${
         isScrolled ? 'shadow-lg' : 'shadow-sm'
-      }`} style={{backgroundColor: '#004094'}}>
+      }`} style={{background: 'linear-gradient(to bottom, #004094, #ffffff)'}}>
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex items-center justify-between h-42">
             {/* Left Section - Location + Financing */}
