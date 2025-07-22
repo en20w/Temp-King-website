@@ -81,24 +81,27 @@ const ServicesSection = () => {
                   onMouseEnter={() => setHoveredService(index)}
                   onMouseLeave={() => setHoveredService(null)}
                 >
-                  {/* Hexagonal Card */}
-                  <Card 
-                    className={`relative h-80 overflow-hidden transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 ${
-                      isHovered ? 'shadow-2xl shadow-gray-400/50' : 'shadow-lg'
-                    }`}
-                    style={{
-                      clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
-                      backgroundColor: 'white'
-                    }}
-                  >
-                    {/* Gradient Background */}
+                  {/* Hexagonal Card Container */}
+                  <div className="relative h-80">
+                    {/* Hexagonal Background with clipPath */}
                     <div 
-                      className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-10 transition-opacity duration-500 ${
-                        isHovered ? 'opacity-20' : ''
+                      className={`absolute inset-0 bg-white transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 ${
+                        isHovered ? 'shadow-2xl shadow-gray-400/50' : 'shadow-lg'
                       }`}
-                    />
-                    
-                    <CardContent className="relative h-full flex flex-col items-center justify-center p-8 text-center">
+                      style={{
+                        clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
+                      }}
+                    >
+                      {/* Gradient Background */}
+                      <div 
+                        className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-10 transition-opacity duration-500 ${
+                          isHovered ? 'opacity-20' : ''
+                        }`}
+                      />
+                    </div>
+
+                    {/* Content Container (not clipped) */}
+                    <div className="relative h-full flex flex-col items-center justify-center p-8 text-center">
                       {/* Icon with animated background */}
                       <div className={`relative mb-6 transition-all duration-500 ${isHovered ? 'scale-110' : ''}`}>
                         <div 
@@ -129,36 +132,6 @@ const ServicesSection = () => {
                         {service.description}
                       </p>
 
-                      {/* Enhanced Expandable Details */}
-                      <div className={`transition-all duration-500 overflow-hidden ${
-                        isHovered ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
-                      }`}>
-                        <div className="relative">
-                          {/* Elegant backdrop with glass effect */}
-                          <div 
-                            className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-10 rounded-xl blur-sm`}
-                          />
-                          <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 mb-3 border border-white/20 shadow-lg">
-                            {/* Service details with icons */}
-                            <div className="space-y-2 mb-3">
-                              {service.details.map((detail, detailIndex) => (
-                                <div key={detailIndex} className="flex items-center text-sm text-gray-700">
-                                  <Star className="h-3 w-3 text-hvac-yellow mr-2 flex-shrink-0" />
-                                  <span className="font-medium">{detail}</span>
-                                </div>
-                              ))}
-                            </div>
-                            
-                            {/* Enhanced pricing display */}
-                            <div className="flex items-center justify-center">
-                              <div className={`bg-gradient-to-r ${service.gradient} text-white px-4 py-2 rounded-full text-sm font-bold shadow-md`}>
-                                {service.price}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
                       {/* Action Button */}
                       <div className={`transition-all duration-500 ${
                         isHovered ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-60'
@@ -174,8 +147,43 @@ const ServicesSection = () => {
                           </Button>
                         </Link>
                       </div>
-                    </CardContent>
-                  </Card>
+                    </div>
+
+                    {/* Floating Details Popup (positioned outside the clipped area) */}
+                    <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-80 z-20 transition-all duration-500 ${
+                      isHovered ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'
+                    }`}>
+                      <div className="relative">
+                        {/* Elegant backdrop with glass effect */}
+                        <div 
+                          className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-15 rounded-2xl blur-sm`}
+                        />
+                        <div className="relative bg-white/90 backdrop-blur-md rounded-2xl p-6 border border-white/30 shadow-2xl">
+                          {/* Popup arrow */}
+                          <div 
+                            className={`absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-br ${service.gradient} rotate-45 opacity-80`}
+                          />
+                          
+                          {/* Service details with icons */}
+                          <div className="space-y-3 mb-4">
+                            {service.details.map((detail, detailIndex) => (
+                              <div key={detailIndex} className="flex items-center text-sm text-gray-700">
+                                <Star className="h-4 w-4 text-hvac-yellow mr-3 flex-shrink-0" />
+                                <span className="font-medium">{detail}</span>
+                              </div>
+                            ))}
+                          </div>
+                          
+                          {/* Enhanced pricing display */}
+                          <div className="flex items-center justify-center pt-2">
+                            <div className={`bg-gradient-to-r ${service.gradient} text-white px-6 py-3 rounded-full text-base font-bold shadow-lg`}>
+                              {service.price}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
                   {/* Floating connection lines */}
                   {index < services.length - 1 && (
