@@ -75,12 +75,14 @@ const Header = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <div className="bg-hvac-red text-white p-2 rounded-lg">
-                <span className="font-bold text-xl">HVAC</span>
-              </div>
+              <img 
+                src="/lovable-uploads/3876ce9e-9680-4dd2-8a15-a07e4a1c4155.png" 
+                alt="Temp Kings Air Logo" 
+                className="h-12 w-auto"
+              />
               <div className="hidden sm:block">
-                <div className="font-bold text-xl text-white">ProService</div>
-                <div className="text-sm text-blue-200">Professional HVAC Solutions</div>
+                <div className="font-bold text-xl text-white">Temp Kings Air</div>
+                <div className="text-sm text-blue-200">Rule Your Comfort</div>
               </div>
             </Link>
 
