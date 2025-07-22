@@ -69,17 +69,12 @@ const Header = () => {
             </div>
 
             {/* Center - Logo */}
-            <Link to="/" className="flex flex-col items-center">
+            <Link to="/" className="flex items-center">
               <img 
                 src="/lovable-uploads/3876ce9e-9680-4dd2-8a15-a07e4a1c4155.png" 
                 alt="Temp Kings Air Logo" 
-                className="h-16 w-auto mb-2"
+                className="h-20 w-auto"
               />
-              <div className="flex flex-col items-center">
-                <div className="font-bold text-2xl text-white leading-tight">TEMP KINGS AIR</div>
-                <div className="w-20 h-0.5 bg-white my-1"></div>
-                <div className="text-sm text-blue-200 leading-tight tracking-wide">HEATING AND AIR</div>
-              </div>
             </Link>
 
             {/* Right Section - Emergency Info + Schedule Button */}
