@@ -49,8 +49,8 @@ const Header = () => {
       <header className={`sticky top-0 z-50 bg-blue-900 border-b transition-all duration-300 ${
         isScrolled ? 'shadow-lg' : 'shadow-sm'
       }`}>
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
               <img 
