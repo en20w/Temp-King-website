@@ -73,7 +73,7 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/3876ce9e-9680-4dd2-8a15-a07e4a1c4155.png" 
                 alt="Temp Kings Air Logo" 
-                className="h-20 w-auto"
+                className="h-24 w-auto"
               />
             </Link>
 
