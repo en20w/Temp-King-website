@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -57,13 +56,13 @@ const Home = () => {
   return (
     <div className="space-y-0">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-hvac-red via-red-600 to-red-700 text-white py-20">
+      <section className="bg-gradient-to-br from-theme-blue via-blue-600 to-blue-700 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <div className="flex justify-center mb-4">
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-6 w-6 fill-hvac-yellow text-hvac-yellow" />
+                  <Star key={i} className="h-6 w-6 fill-theme-light-blue text-theme-light-blue" />
                 ))}
               </div>
               <span className="ml-2 text-lg font-semibold">4.9/5 Google Reviews</span>
@@ -71,10 +70,10 @@ const Home = () => {
             
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Dallas-Fort Worth's
-              <span className="block text-hvac-yellow">Trusted HVAC Experts</span>
+              <span className="block text-theme-light-blue">Trusted HVAC Experts</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-red-100 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
               Professional heating, cooling, and air quality services with 24/7 emergency support. 
               Same-day service available.
             </p>
@@ -82,7 +81,7 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
               <Button 
                 size="lg" 
-                className="bg-hvac-yellow text-black hover:bg-hvac-yellow/90 text-lg px-8 py-3 h-auto"
+                className="bg-theme-light-blue text-white hover:bg-theme-light-blue/90 text-lg px-8 py-3 h-auto"
               >
                 <Phone className="mr-2 h-5 w-5" />
                 Call (214) 555-0123
@@ -90,7 +89,7 @@ const Home = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-2 border-white text-white hover:bg-white hover:text-hvac-red text-lg px-8 py-3 h-auto"
+                className="border-2 border-white text-white hover:bg-white hover:text-theme-blue text-lg px-8 py-3 h-auto"
               >
                 Schedule Service Online
               </Button>
@@ -134,7 +133,7 @@ const Home = () => {
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
                   <p className="text-gray-600 mb-4">{service.description}</p>
                   <Link to={service.link}>
-                    <Button variant="outline" className="border-hvac-red text-hvac-red hover:bg-hvac-red hover:text-white">
+                    <Button variant="outline" className="border-theme-blue text-theme-blue hover:bg-theme-blue hover:text-white">
                       Learn More
                     </Button>
                   </Link>
@@ -145,7 +144,7 @@ const Home = () => {
 
           <div className="text-center mt-8">
             <Link to="/services">
-              <Button className="bg-hvac-red hover:bg-hvac-red/90 text-white px-8">
+              <Button className="bg-theme-blue hover:bg-theme-blue/90 text-white px-8">
                 View All Services
               </Button>
             </Link>
@@ -164,7 +163,7 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-hvac-red text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="bg-theme-blue text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Clock className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-2">24/7 Emergency Service</h3>
@@ -172,7 +171,7 @@ const Home = () => {
             </div>
 
             <div className="text-center">
-              <div className="bg-hvac-yellow text-black p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="bg-theme-light-blue text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Shield className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-2">Licensed & Insured</h3>
@@ -180,7 +179,7 @@ const Home = () => {
             </div>
 
             <div className="text-center">
-              <div className="bg-hvac-red text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="bg-theme-deep-blue text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Wrench className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-2">Expert Technicians</h3>
@@ -200,7 +199,7 @@ const Home = () => {
             <div className="flex justify-center items-center mb-4">
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-6 w-6 fill-hvac-yellow text-hvac-yellow" />
+                  <Star key={i} className="h-6 w-6 fill-theme-light-blue text-theme-light-blue" />
                 ))}
               </div>
               <span className="ml-2 text-lg font-semibold">4.9/5 based on 500+ reviews</span>
@@ -213,7 +212,7 @@ const Home = () => {
                 <CardContent className="p-6">
                   <div className="flex mb-4">
                     {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-hvac-yellow text-hvac-yellow" />
+                      <Star key={i} className="h-5 w-5 fill-theme-light-blue text-theme-light-blue" />
                     ))}
                   </div>
                   <p className="text-gray-600 mb-4 italic">"{review.comment}"</p>
@@ -228,7 +227,7 @@ const Home = () => {
 
           <div className="text-center mt-8">
             <Link to="/reviews">
-              <Button variant="outline" className="border-hvac-red text-hvac-red hover:bg-hvac-red hover:text-white">
+              <Button variant="outline" className="border-theme-blue text-theme-blue hover:bg-theme-blue hover:text-white">
                 Read More Reviews
               </Button>
             </Link>
@@ -237,18 +236,18 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-hvac-red text-white">
+      <section className="py-16 bg-theme-blue text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Need HVAC Service Today?
           </h2>
-          <p className="text-xl mb-8 text-red-100">
+          <p className="text-xl mb-8 text-blue-100">
             Don't wait for your comfort to be compromised. Call now for same-day service!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-hvac-yellow text-black hover:bg-hvac-yellow/90 text-lg px-8 py-3 h-auto"
+              className="bg-theme-light-blue text-white hover:bg-theme-light-blue/90 text-lg px-8 py-3 h-auto"
             >
               <Phone className="mr-2 h-5 w-5" />
               Call (214) 555-0123
@@ -256,7 +255,7 @@ const Home = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-hvac-red text-lg px-8 py-3 h-auto"
+              className="border-2 border-white text-white hover:bg-white hover:text-theme-blue text-lg px-8 py-3 h-auto"
             >
               Schedule Online
             </Button>

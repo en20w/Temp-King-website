@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -46,7 +45,7 @@ const Header = () => {
   return (
     <>
       {/* Top Info Bar */}
-      <div className="bg-hvac-red text-white py-2 px-4">
+      <div className="bg-theme-blue text-white py-2 px-4">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center text-sm">
           <div className="flex items-center gap-4 mb-2 sm:mb-0">
             <div className="flex items-center gap-1">
@@ -75,7 +74,7 @@ const Header = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <div className="bg-hvac-red text-white p-2 rounded-lg">
+              <div className="bg-theme-blue text-white p-2 rounded-lg">
                 <span className="font-bold text-xl">HVAC</span>
               </div>
               <div className="hidden sm:block">
@@ -90,7 +89,7 @@ const Header = () => {
                 <div key={item.title} className="relative group">
                   <Link
                     to={item.href}
-                    className="flex items-center text-gray-700 hover:text-hvac-red font-medium transition-colors"
+                    className="flex items-center text-gray-700 hover:text-theme-blue font-medium transition-colors"
                   >
                     {item.title}
                     {item.submenu && <ChevronDown className="ml-1 h-4 w-4" />}
@@ -103,7 +102,7 @@ const Header = () => {
                           <Link
                             key={subItem.title}
                             to={subItem.href}
-                            className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-hvac-red transition-colors"
+                            className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-theme-blue transition-colors"
                           >
                             {subItem.title}
                           </Link>
@@ -117,11 +116,11 @@ const Header = () => {
 
             {/* CTA Buttons */}
             <div className="hidden md:flex items-center space-x-3">
-              <Button variant="outline" className="border-hvac-red text-hvac-red hover:bg-hvac-red hover:text-white">
+              <Button variant="outline" className="border-theme-blue text-theme-blue hover:bg-theme-blue hover:text-white">
                 <Phone className="mr-2 h-4 w-4" />
                 Call Now
               </Button>
-              <Button className="bg-hvac-yellow text-black hover:bg-hvac-yellow/90">
+              <Button className="bg-theme-light-blue text-white hover:bg-theme-light-blue/90">
                 Book Service
               </Button>
             </div>
@@ -139,7 +138,7 @@ const Header = () => {
                     <div key={item.title} className="space-y-2">
                       <Link
                         to={item.href}
-                        className="block text-lg font-medium text-gray-900 hover:text-hvac-red"
+                        className="block text-lg font-medium text-gray-900 hover:text-theme-blue"
                         onClick={() => setIsOpen(false)}
                       >
                         {item.title}
@@ -150,7 +149,7 @@ const Header = () => {
                             <Link
                               key={subItem.title}
                               to={subItem.href}
-                              className="block text-gray-600 hover:text-hvac-red"
+                              className="block text-gray-600 hover:text-theme-blue"
                               onClick={() => setIsOpen(false)}
                             >
                               {subItem.title}
@@ -164,14 +163,14 @@ const Header = () => {
                   <div className="pt-4 border-t space-y-3">
                     <Button 
                       variant="outline" 
-                      className="w-full border-hvac-red text-hvac-red hover:bg-hvac-red hover:text-white"
+                      className="w-full border-theme-blue text-theme-blue hover:bg-theme-blue hover:text-white"
                       onClick={() => setIsOpen(false)}
                     >
                       <Phone className="mr-2 h-4 w-4" />
                       Call Now
                     </Button>
                     <Button 
-                      className="w-full bg-hvac-yellow text-black hover:bg-hvac-yellow/90"
+                      className="w-full bg-theme-light-blue text-white hover:bg-theme-light-blue/90"
                       onClick={() => setIsOpen(false)}
                     >
                       Book Service
