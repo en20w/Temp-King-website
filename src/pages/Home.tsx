@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, Clock, Shield, Users, Wrench } from 'lucide-react';
@@ -6,6 +5,8 @@ import { Link } from 'react-router-dom';
 import ServicesSection from '@/components/sections/ServicesSection';
 import HeroToServicesTransition from '@/components/sections/HeroToServicesTransition';
 import EnhancedWhyChooseUs from '@/components/sections/EnhancedWhyChooseUs';
+import WhyChooseToScheduleTransition from '@/components/sections/WhyChooseToScheduleTransition';
+import InteractiveAppointmentFlow from '@/components/sections/InteractiveAppointmentFlow';
 import FloatingAnimations from '@/components/animations/FloatingAnimations';
 
 const Home = () => {
@@ -53,62 +54,32 @@ const Home = () => {
       {/* Enhanced Why Choose Us Section */}
       <EnhancedWhyChooseUs />
 
-      {/* Schedule Appointment Section */}
-      <section className="py-16 bg-gradient-to-br from-hvac-red via-hvac-red to-red-700">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+      {/* Smooth Transition to Schedule Section */}
+      <WhyChooseToScheduleTransition />
+
+      {/* Enhanced Interactive Schedule Appointment Section */}
+      <section className="py-20 bg-gradient-to-br from-hvac-red via-hvac-red to-red-700 relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-32 h-32 bg-hvac-yellow rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-10 right-10 w-40 h-40 bg-white rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-hvac-yellow rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Schedule Your Appointment Today
             </h2>
-            <p className="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
-              Don't wait for your HVAC problems to get worse. Book your service appointment now and get back to comfort.
+            <p className="text-xl text-red-100 mb-8 max-w-3xl mx-auto">
+              Experience our streamlined booking process. Choose your service, pick your time, and get back to comfort.
             </p>
-            
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                <div className="flex flex-col items-center">
-                  <div className="bg-hvac-yellow text-black rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                    <Clock className="h-8 w-8" />
-                  </div>
-                  <h3 className="text-lg font-bold text-white mb-2">Same-Day Service</h3>
-                  <p className="text-red-100 text-sm">Available for urgent repairs</p>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="bg-hvac-yellow text-black rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                    <Shield className="h-8 w-8" />
-                  </div>
-                  <h3 className="text-lg font-bold text-white mb-2">100% Guarantee</h3>
-                  <p className="text-red-100 text-sm">Satisfaction guaranteed</p>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="bg-hvac-yellow text-black rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                    <Users className="h-8 w-8" />
-                  </div>
-                  <h3 className="text-lg font-bold text-white mb-2">Expert Technicians</h3>
-                  <p className="text-red-100 text-sm">NATE-certified professionals</p>
-                </div>
-              </div>
-            </div>
+          </div>
+          
+          <InteractiveAppointmentFlow />
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                className="bg-hvac-yellow text-black hover:bg-hvac-yellow/90 text-xl px-10 py-4 h-auto font-bold shadow-lg"
-              >
-                <Phone className="mr-3 h-6 w-6" />
-                Call (214) 555-0123
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-2 border-white text-white hover:bg-white hover:text-hvac-red text-xl px-10 py-4 h-auto font-bold"
-              >
-                <Wrench className="mr-3 h-6 w-6" />
-                Schedule Online
-              </Button>
-            </div>
-
-            <p className="text-red-100 mt-6 text-sm">
+          <div className="text-center mt-12">
+            <p className="text-red-100 text-sm">
               Available 24/7 for emergency services • Free estimates on new installations
             </p>
           </div>
