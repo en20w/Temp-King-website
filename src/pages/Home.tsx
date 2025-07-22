@@ -3,35 +3,9 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Star, Clock, Shield, Users, Wrench } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import ServicesSection from '@/components/sections/ServicesSection';
 
 const Home = () => {
-  const services = [
-    {
-      title: 'AC Repair',
-      description: 'Fast and reliable air conditioning repair services',
-      icon: '❄️',
-      link: '/services/ac-repair'
-    },
-    {
-      title: 'Heating Repair', 
-      description: 'Professional heating system repair and maintenance',
-      icon: '🔥',
-      link: '/services/heating-repair'
-    },
-    {
-      title: 'Installation',
-      description: 'Complete HVAC system installation services',
-      icon: '🔧',
-      link: '/services/installation'
-    },
-    {
-      title: 'Maintenance',
-      description: 'Regular maintenance to keep your system running efficiently',
-      icon: '⚙️',
-      link: '/services/maintenance'
-    }
-  ];
-
   const reviews = [
     {
       name: 'Sarah Johnson',
@@ -86,44 +60,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our HVAC Services
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Comprehensive heating, cooling, and air quality solutions for your home or business
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-6 text-center">
-                  <div className="text-4xl mb-4">{service.icon}</div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
-                  <p className="text-gray-600 mb-4">{service.description}</p>
-                  <Link to={service.link}>
-                    <Button variant="outline" className="border-hvac-red text-hvac-red hover:bg-hvac-red hover:text-white">
-                      Learn More
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="text-center mt-8">
-            <Link to="/services">
-              <Button className="bg-hvac-red hover:bg-hvac-red/90 text-white px-8">
-                View All Services
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Services Section - Using new component */}
+      <ServicesSection />
 
       {/* Why Choose Us Section */}
       <section className="py-16">
