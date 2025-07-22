@@ -149,9 +149,13 @@ const ServicesSection = () => {
                       </div>
                     </div>
 
-                    {/* Floating Details Popup (positioned outside the clipped area) */}
-                    <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-80 z-20 transition-all duration-500 ${
-                      isHovered ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'
+                    {/* Floating Details Popup (positioned on left/right sides) */}
+                    <div className={`absolute top-1/2 ${
+                      index % 2 === 0 ? '-left-4 -translate-x-full' : '-right-4 translate-x-full'
+                    } -translate-y-1/2 w-80 z-20 transition-all duration-500 ${
+                      isHovered ? 'opacity-100 translate-x-0 pointer-events-auto' : `opacity-0 ${
+                        index % 2 === 0 ? 'translate-x-4' : '-translate-x-4'
+                      } pointer-events-none`
                     }`}>
                       <div className="relative">
                         {/* Elegant backdrop with glass effect */}
