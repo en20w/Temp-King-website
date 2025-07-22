@@ -99,19 +99,19 @@ const EnhancedWhyChooseUs = () => {
               <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">
                 {counters.years}+
               </div>
-              <div className="text-blue-500 font-medium">Years Experience</div>
+              <div className="text-gray-600 font-medium">Years Experience</div>
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">
                 {counters.customers}+
               </div>
-              <div className="text-blue-500 font-medium">Happy Customers</div>
+              <div className="text-gray-600 font-medium">Happy Customers</div>
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">
                 {counters.satisfaction}%
               </div>
-              <div className="text-blue-500 font-medium">Satisfaction Rate</div>
+              <div className="text-gray-600 font-medium">Satisfaction Rate</div>
             </div>
           </div>
         </div>

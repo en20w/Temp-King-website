@@ -80,17 +80,17 @@ const HeroToServicesTransition = () => {
           <div className="flex justify-center items-center mb-8 space-x-8">
             <div className="text-center animate-fade-in">
               <div className="text-3xl font-bold text-blue-600">500+</div>
-              <div className="text-sm text-blue-500">Happy Customers</div>
+              <div className="text-sm text-gray-600">Happy Customers</div>
             </div>
             <div className="w-px h-12 bg-gray-300"></div>
             <div className="text-center animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <div className="text-3xl font-bold text-blue-600">24/7</div>
-              <div className="text-sm text-blue-500">Emergency Service</div>
+              <div className="text-sm text-gray-600">Emergency Service</div>
             </div>
             <div className="w-px h-12 bg-gray-300"></div>
             <div className="text-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <div className="text-3xl font-bold text-blue-600">10+</div>
-              <div className="text-sm text-blue-500">Years Experience</div>
+              <div className="text-sm text-gray-600">Years Experience</div>
             </div>
           </div>
 
@@ -107,7 +107,7 @@ const HeroToServicesTransition = () => {
           </div>
 
           {/* Engaging Subtitle */}
-          <p className="text-xl text-blue-500 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '1s' }}>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '1s' }}>
             From emergency repairs to complete installations, discover how our certified technicians 
             keep Dallas-Fort Worth comfortable year-round
           </p>
