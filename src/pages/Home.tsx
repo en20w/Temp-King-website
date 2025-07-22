@@ -84,33 +84,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-        
-        {/* Curved bottom border with diagonal stripes */}
-        <div className="absolute bottom-0 left-0 right-0 h-20 overflow-hidden">
-          <div className="relative w-full h-full">
-            {/* Orange section with curved shape */}
-            <div 
-              className="absolute inset-0 bg-orange-400"
-              style={{
-                clipPath: 'ellipse(150% 100% at 50% 0%)'
-              }}
-            ></div>
-            {/* Diagonal white stripes */}
-            <div 
-              className="absolute inset-0 opacity-30"
-              style={{
-                clipPath: 'ellipse(150% 100% at 50% 0%)',
-                background: `repeating-linear-gradient(
-                  45deg,
-                  transparent,
-                  transparent 8px,
-                  white 8px,
-                  white 16px
-                )`
-              }}
-            ></div>
-          </div>
-        </div>
       </section>
 
       {/* Services Section */}
