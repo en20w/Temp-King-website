@@ -79,17 +79,20 @@ const Header = () => {
 
             {/* Right Section - Emergency Info + Schedule Button */}
             <div className="flex items-center space-x-6">
-              <div className="text-white text-right">
-                <div className="text-orange-400 font-bold text-sm">24/7 Emergency Services</div>
-                <div className="flex items-center justify-end mt-1">
-                  <Phone className="h-4 w-4 mr-2" />
-                  <a href="tel:(214) 555-0123" className="font-bold text-lg hover:text-hvac-yellow">
-                    (214) 555-0123
-                  </a>
+              <div className="flex items-center text-white">
+                <Phone className="h-5 w-5 mr-2" />
+                <div>
+                  <div className="text-orange-400 font-medium text-sm">24/7 Emergency Services</div>
+                  <div className="font-medium text-sm">
+                    <a href="tel:(214) 555-0123" className="hover:text-hvac-yellow">
+                      (214) 555-0123
+                    </a>
+                  </div>
                 </div>
               </div>
               <Button 
-                className="bg-teal-500 hover:bg-teal-600 text-white rounded-full px-8 py-3 font-bold text-sm"
+                variant="outline" 
+                className="bg-transparent border-2 border-teal-300 text-white hover:bg-teal-600 rounded-full px-6 py-2 font-medium"
               >
                 SCHEDULE NOW
               </Button>
