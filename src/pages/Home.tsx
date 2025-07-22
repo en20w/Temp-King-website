@@ -57,10 +57,10 @@ const Home = () => {
     <div className="space-y-0">
       {/* Hero Section */}
       <section 
-        className="py-20 bg-cover bg-center bg-no-repeat relative"
+        className="py-32 bg-cover bg-center bg-no-repeat relative"
         style={{ backgroundImage: 'url(/lovable-uploads/625dc519-0486-4cf0-ad9d-f4dc78b88bb6.png)' }}
       >
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6">            
             <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white">
