@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="bg-theme-blue text-white p-2 rounded-lg">
+              <div className="bg-hvac-red text-white p-2 rounded-lg">
                 <span className="font-bold text-xl">HVAC</span>
               </div>
               <div>
@@ -28,7 +28,7 @@ const Footer = () => {
             <div className="flex items-center space-x-1">
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-theme-light-blue text-theme-light-blue" />
+                  <Star key={i} className="h-4 w-4 fill-hvac-yellow text-hvac-yellow" />
                 ))}
               </div>
               <span className="text-sm text-gray-300">4.9/5 on Google Reviews</span>
@@ -37,7 +37,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="font-bold text-lg mb-4 text-theme-light-blue">Services</h3>
+            <h3 className="font-bold text-lg mb-4 text-hvac-yellow">Services</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/services/ac-repair" className="text-gray-300 hover:text-white transition-colors">AC Repair</Link></li>
               <li><Link to="/services/heating-repair" className="text-gray-300 hover:text-white transition-colors">Heating Repair</Link></li>
@@ -50,42 +50,42 @@ const Footer = () => {
 
           {/* Service Areas */}
           <div>
-            <h3 className="font-bold text-lg mb-4 text-theme-light-blue">Service Areas</h3>
+            <h3 className="font-bold text-lg mb-4 text-hvac-yellow">Service Areas</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/areas/dallas" className="text-gray-300 hover:text-white transition-colors">Dallas</Link></li>
               <li><Link to="/areas/fort-worth" className="text-gray-300 hover:text-white transition-colors">Fort Worth</Link></li>
               <li><Link to="/areas/plano" className="text-gray-300 hover:text-white transition-colors">Plano</Link></li>
               <li><Link to="/areas/arlington" className="text-gray-300 hover:text-white transition-colors">Arlington</Link></li>
               <li><Link to="/areas/irving" className="text-gray-300 hover:text-white transition-colors">Irving</Link></li>
-              <li><Link to="/areas" className="text-theme-light-blue hover:text-white transition-colors">View All Areas</Link></li>
+              <li><Link to="/areas" className="text-hvac-yellow hover:text-white transition-colors">View All Areas</Link></li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-bold text-lg mb-4 text-theme-light-blue">Contact Us</h3>
+            <h3 className="font-bold text-lg mb-4 text-hvac-yellow">Contact Us</h3>
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4 text-theme-blue" />
+                <Phone className="h-4 w-4 text-hvac-red" />
                 <a href="tel:(214) 555-0123" className="text-gray-300 hover:text-white transition-colors">
                   (214) 555-0123
                 </a>
               </div>
               <div className="flex items-center space-x-2">
-                <Mail className="h-4 w-4 text-theme-blue" />
+                <Mail className="h-4 w-4 text-hvac-red" />
                 <a href="mailto:info@hvacproservice.com" className="text-gray-300 hover:text-white transition-colors">
                   info@hvacproservice.com
                 </a>
               </div>
               <div className="flex items-start space-x-2">
-                <MapPin className="h-4 w-4 text-theme-blue mt-0.5" />
+                <MapPin className="h-4 w-4 text-hvac-red mt-0.5" />
                 <div className="text-gray-300">
                   <div>123 HVAC Street</div>
                   <div>Dallas, TX 75201</div>
                 </div>
               </div>
               <div className="flex items-center space-x-2">
-                <Clock className="h-4 w-4 text-theme-blue" />
+                <Clock className="h-4 w-4 text-hvac-red" />
                 <div className="text-gray-300">
                   <div>24/7 Emergency Service</div>
                   <div className="text-xs">Mon-Fri: 8AM-6PM</div>
@@ -94,11 +94,11 @@ const Footer = () => {
             </div>
             
             <div className="mt-4 space-y-2">
-              <Button className="w-full bg-theme-blue hover:bg-theme-blue/90 text-white">
+              <Button className="w-full bg-hvac-red hover:bg-hvac-red/90 text-white">
                 <Phone className="mr-2 h-4 w-4" />
                 Emergency Service
               </Button>
-              <Button variant="outline" className="w-full border-theme-light-blue text-theme-light-blue hover:bg-theme-light-blue hover:text-black">
+              <Button variant="outline" className="w-full border-hvac-yellow text-hvac-yellow hover:bg-hvac-yellow hover:text-black">
                 Schedule Service
               </Button>
             </div>
