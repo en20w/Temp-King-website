@@ -52,15 +52,15 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-3">
               <img 
                 src="/lovable-uploads/3876ce9e-9680-4dd2-8a15-a07e4a1c4155.png" 
                 alt="Temp Kings Air Logo" 
-                className="h-12 w-auto"
+                className="h-14 w-auto"
               />
-              <div className="hidden sm:block">
-                <div className="font-bold text-xl text-white">Temp Kings Air</div>
-                <div className="text-sm text-blue-200">Rule Your Comfort</div>
+              <div className="hidden sm:block flex flex-col justify-center">
+                <div className="font-bold text-xl text-white leading-tight">Temp Kings Air</div>
+                <div className="text-sm text-blue-200 leading-tight">Rule Your Comfort</div>
               </div>
             </Link>
 
