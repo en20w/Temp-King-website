@@ -92,14 +92,14 @@ const Home = () => {
             <div 
               className="absolute inset-0 bg-orange-400"
               style={{
-                clipPath: 'polygon(0 0, 100% 0, 50% 100%)'
+                clipPath: 'polygon(0 100%, 50% 0, 100% 100%)'
               }}
             ></div>
             {/* Diagonal white stripes */}
             <div 
               className="absolute inset-0 opacity-30"
               style={{
-                clipPath: 'polygon(0 0, 100% 0, 50% 100%)',
+                clipPath: 'polygon(0 100%, 50% 0, 100% 100%)',
                 background: `repeating-linear-gradient(
                   45deg,
                   transparent,
@@ -113,7 +113,7 @@ const Home = () => {
             <div 
               className="absolute top-0 left-0 right-0 h-6 bg-teal-200"
               style={{
-                clipPath: 'polygon(0 0, 100% 0, 50% 100%)'
+                clipPath: 'polygon(0 100%, 50% 0, 100% 100%)'
               }}
             ></div>
           </div>
