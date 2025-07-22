@@ -69,14 +69,15 @@ const Header = () => {
             </div>
 
             {/* Center - Logo */}
-            <Link to="/" className="flex items-center space-x-3">
+            <Link to="/" className="flex flex-col items-center">
               <img 
                 src="/lovable-uploads/3876ce9e-9680-4dd2-8a15-a07e4a1c4155.png" 
                 alt="Temp Kings Air Logo" 
-                className="h-16 w-auto"
+                className="h-16 w-auto mb-2"
               />
-              <div className="flex flex-col justify-center">
+              <div className="flex flex-col items-center">
                 <div className="font-bold text-2xl text-white leading-tight">TEMP KINGS AIR</div>
+                <div className="w-20 h-0.5 bg-white my-1"></div>
                 <div className="text-sm text-blue-200 leading-tight tracking-wide">HEATING AND AIR</div>
               </div>
             </Link>
