@@ -28,17 +28,17 @@ const HeroToServicesTransition = () => {
 
       {/* Floating HVAC Icons */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="animate-float-1 absolute top-8 left-1/4 text-hvac-yellow/20">
-          <Snowflake className="h-12 w-12" />
+        <div className="animate-float-1 absolute top-8 left-1/4">
+          <Snowflake className="h-12 w-12 text-blue-400/30" />
         </div>
-        <div className="animate-float-2 absolute top-16 right-1/3 text-hvac-red/20">
-          <Flame className="h-10 w-10" />
+        <div className="animate-float-2 absolute top-16 right-1/3">
+          <Flame className="h-10 w-10 text-red-500/30" />
         </div>
-        <div className="animate-float-3 absolute top-6 left-2/3 text-hvac-yellow/20">
-          <Wrench className="h-8 w-8" />
+        <div className="animate-float-3 absolute top-6 left-2/3">
+          <Wrench className="h-8 w-8 text-slate-400/30" />
         </div>
-        <div className="animate-float-1 absolute top-20 right-1/4 text-hvac-red/20">
-          <Cog className="h-14 w-14" />
+        <div className="animate-float-1 absolute top-20 right-1/4">
+          <Cog className="h-14 w-14 text-slate-400/30" />
         </div>
       </div>
 
