@@ -166,7 +166,7 @@ const InteractiveAppointmentFlow = () => {
           className="bg-hvac-yellow text-black hover:bg-hvac-yellow/90 text-xl px-10 py-4 h-auto font-bold shadow-lg group"
         >
           <Phone className="mr-3 h-6 w-6 group-hover:animate-bounce" />
-          Call (214) 555-0123
+          Call (626) 400-5300
         </Button>
         <Button 
           size="lg" 

@@ -38,7 +38,7 @@ const Home = () => {
                 className="bg-blue-500 text-white hover:bg-blue-600 text-lg px-8 py-3 h-auto"
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Call (214) 555-0123
+                Call (626) 400-5300
               </Button>
             </div>
           </div>
@@ -150,7 +150,7 @@ const Home = () => {
                 className="bg-blue-500 text-white hover:bg-blue-600 text-lg px-8 py-3 h-auto font-bold"
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Call (214) 555-0123
+                Call (626) 400-5300
               </Button>
             </div>
           </div>
