@@ -108,16 +108,32 @@ const Home = () => {
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Regular Service Hours</h3>
                 <div className="space-y-3 text-left">
                   <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="font-semibold text-gray-700">Monday - Friday</span>
-                    <span className="text-gray-900 font-bold">7:00 AM - 7:00 PM</span>
+                    <span className="font-semibold text-gray-700">Monday</span>
+                    <span className="text-gray-900 font-bold">24 Hours</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-semibold text-gray-700">Tuesday</span>
+                    <span className="text-gray-900 font-bold">24 Hours</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-semibold text-gray-700">Wednesday</span>
+                    <span className="text-gray-900 font-bold">24 Hours</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-semibold text-gray-700">Thursday</span>
+                    <span className="text-gray-900 font-bold">24 Hours</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-semibold text-gray-700">Friday</span>
+                    <span className="text-gray-900 font-bold">24 Hours</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100">
                     <span className="font-semibold text-gray-700">Saturday</span>
-                    <span className="text-gray-900 font-bold">8:00 AM - 5:00 PM</span>
+                    <span className="text-gray-900 font-bold">24 Hours</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="font-semibold text-gray-700">Sunday</span>
-                    <span className="text-gray-900 font-bold">Closed</span>
+                    <span className="text-gray-900 font-bold">24 Hours</span>
                   </div>
                 </div>
               </div>
