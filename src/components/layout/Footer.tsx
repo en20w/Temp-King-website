@@ -1,31 +1,24 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, Mail, MapPin, Clock, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { scrollToSection } from '@/utils/scrollUtils';
-import hvacLogo from '@/assets/hvac-proservice-logo.png';
-
 const Footer = () => {
   const handleScheduleClick = () => {
     scrollToSection('schedule-appointment');
   };
-
-  return (
-    <footer className="bg-gray-900 text-white">
+  return <footer className="bg-gray-900 text-white">
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <img 
-                src={hvacLogo} 
-                alt="HVAC ProService Logo" 
-                className="w-12 h-12 object-contain"
-              />
+              <div className="bg-hvac-red text-white p-2 rounded-lg">
+                <span className="font-bold text-xl">HVAC</span>
+              </div>
               <div>
-                <div className="font-bold text-xl">ProService</div>
+                <div className="font-bold text-xl">Temp Kings Air</div>
                 <div className="text-sm text-gray-400">Professional HVAC Solutions</div>
               </div>
             </div>
@@ -35,9 +28,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center space-x-1">
               <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-hvac-yellow text-hvac-yellow" />
-                ))}
+                {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-hvac-yellow text-hvac-yellow" />)}
               </div>
               <span className="text-sm text-gray-300">4.9/5 on Google Reviews</span>
             </div>
@@ -106,11 +97,7 @@ const Footer = () => {
                 <Phone className="mr-2 h-4 w-4" />
                 Emergency Service
               </Button>
-              <Button 
-                variant="outline" 
-                className="w-full border-hvac-yellow text-hvac-yellow hover:bg-hvac-yellow hover:text-black"
-                onClick={handleScheduleClick}
-              >
+              <Button variant="outline" className="w-full border-hvac-yellow text-hvac-yellow hover:bg-hvac-yellow hover:text-black" onClick={handleScheduleClick}>
                 Schedule Service
               </Button>
             </div>
@@ -133,8 +120,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
