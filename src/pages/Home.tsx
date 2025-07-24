@@ -8,23 +8,20 @@ import EnhancedWhyChooseUs from '@/components/sections/EnhancedWhyChooseUs';
 import CreativeScheduleTransition from '@/components/sections/CreativeScheduleTransition';
 import EnhancedInteractiveFlow from '@/components/sections/EnhancedInteractiveFlow';
 import FloatingAnimations from '@/components/animations/FloatingAnimations';
-
 const Home = () => {
-  return (
-    <div className="space-y-0">
+  return <div className="space-y-0">
       <FloatingAnimations />
       
       {/* Hero Section */}
-      <section 
-        className="h-[70vh] bg-cover bg-center bg-no-repeat relative flex items-center"
-        style={{ backgroundImage: 'url(/lovable-uploads/625dc519-0486-4cf0-ad9d-f4dc78b88bb6.png)' }}
-      >
+      <section className="h-[70vh] bg-cover bg-center bg-no-repeat relative flex items-center" style={{
+      backgroundImage: 'url(/lovable-uploads/625dc519-0486-4cf0-ad9d-f4dc78b88bb6.png)'
+    }}>
         <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6">            
             <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white">
               Dallas-Fort Worth's
-              <span className="block text-blue-400">Trusted HVAC Experts</span>
+              <span className="block text-blue-400">PaTrusted HVAC Experts</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto">
@@ -33,10 +30,7 @@ const Home = () => {
             </p>
 
             <div className="flex justify-center pt-4">
-              <Button 
-                size="lg" 
-                className="bg-blue-500 text-white hover:bg-blue-600 text-lg px-8 py-3 h-auto"
-              >
+              <Button size="lg" className="bg-blue-500 text-white hover:bg-blue-600 text-lg px-8 py-3 h-auto">
                 <Phone className="mr-2 h-5 w-5" />
                 Call (626) 400-5300
               </Button>
@@ -62,8 +56,12 @@ const Home = () => {
         {/* Animated Background Elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-32 h-32 bg-blue-300 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute bottom-10 right-10 w-40 h-40 bg-white rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }}></div>
-          <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-blue-300 rounded-full blur-2xl animate-float" style={{ animationDelay: '1.5s' }}></div>
+          <div className="absolute bottom-10 right-10 w-40 h-40 bg-white rounded-full blur-3xl animate-float" style={{
+          animationDelay: '3s'
+        }}></div>
+          <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-blue-300 rounded-full blur-2xl animate-float" style={{
+          animationDelay: '1.5s'
+        }}></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -71,14 +69,18 @@ const Home = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in">
               Schedule Your Appointment
             </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto animate-fade-in" style={{
+            animationDelay: '0.2s'
+          }}>
               Experience our streamlined booking process. Choose your service, pick your time, and get back to comfort.
             </p>
           </div>
           
           <EnhancedInteractiveFlow />
 
-          <div className="text-center mt-12 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <div className="text-center mt-12 animate-fade-in" style={{
+          animationDelay: '0.4s'
+        }}>
             <p className="text-blue-100 text-sm">
               Available 24/7 for emergency services • Free estimates on new installations
             </p>
@@ -161,10 +163,7 @@ const Home = () => {
               <p className="text-gray-600 mb-6">
                 <strong>Need service outside regular hours?</strong> Call us anytime for emergency repairs!
               </p>
-              <Button 
-                size="lg" 
-                className="bg-blue-500 text-white hover:bg-blue-600 text-lg px-8 py-3 h-auto font-bold"
-              >
+              <Button size="lg" className="bg-blue-500 text-white hover:bg-blue-600 text-lg px-8 py-3 h-auto font-bold">
                 <Phone className="mr-2 h-5 w-5" />
                 Call (626) 400-5300
               </Button>
@@ -173,8 +172,6 @@ const Home = () => {
         </div>
       </section>
 
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
