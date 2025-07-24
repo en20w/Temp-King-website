@@ -122,9 +122,9 @@ const ServicesSection = () => {
                     </div>
 
                     {/* Content Container (not clipped) */}
-                    <div className="relative h-full flex flex-col items-center justify-center p-8 text-center">
+                    <div className="relative h-full flex flex-col items-center justify-center p-6 text-center max-w-[85%] mx-auto">
                       {/* Category Badge */}
-                      <div className={`absolute top-4 left-1/2 transform -translate-x-1/2 px-3 py-1 rounded-full text-xs font-semibold transition-all duration-300 ${
+                      <div className={`absolute top-3 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-semibold transition-all duration-300 ${
                         service.category === 'Residential' ? 'bg-blue-100 text-blue-700' :
                         service.category === 'Commercial' ? 'bg-slate-100 text-slate-700' :
                         'bg-teal-100 text-teal-700'
@@ -133,9 +133,9 @@ const ServicesSection = () => {
                       </div>
 
                       {/* Icon with animated background */}
-                      <div className={`relative mb-6 transition-all duration-500 ${isHovered ? 'scale-110' : ''}`}>
-                        <div className={`w-20 h-20 rounded-full bg-gradient-to-br ${service.gradient} flex items-center justify-center shadow-lg transition-all duration-500 ${isHovered ? 'shadow-xl rotate-12' : ''}`}>
-                          <Icon className="h-10 w-10 text-white" />
+                      <div className={`relative mb-4 transition-all duration-500 ${isHovered ? 'scale-110' : ''}`}>
+                        <div className={`w-16 h-16 rounded-full bg-gradient-to-br ${service.gradient} flex items-center justify-center shadow-lg transition-all duration-500 ${isHovered ? 'shadow-xl rotate-12' : ''}`}>
+                          <Icon className="h-8 w-8 text-white" />
                         </div>
                         
                         {/* Animated ring */}
@@ -143,12 +143,12 @@ const ServicesSection = () => {
                       </div>
 
                       {/* Service Title */}
-                      <h3 className="text-xl font-bold text-gray-900 mb-3 transition-colors duration-300">
+                      <h3 className="text-lg font-bold text-gray-900 mb-2 transition-colors duration-300 leading-tight">
                         {service.title}
                       </h3>
 
                       {/* Service Description */}
-                      <p className={`text-gray-600 mb-4 transition-all duration-500 ${isHovered ? 'opacity-70' : 'opacity-100'}`}>
+                      <p className={`text-sm text-gray-600 mb-3 transition-all duration-500 leading-relaxed max-w-[90%] ${isHovered ? 'opacity-70' : 'opacity-100'}`}>
                         {service.description}
                       </p>
 
