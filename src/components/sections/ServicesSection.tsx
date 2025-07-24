@@ -46,29 +46,6 @@ const ServicesSection = () => {
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        {/* Enhanced CTA Section */}
-        <div className="text-center mb-16">
-          <div className="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Need Help Choosing the Right Service?
-            </h3>
-            <p className="text-gray-600 mb-6">
-              Our experts are standing by to help you find the perfect solution for your HVAC needs.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/services">
-                <Button className="bg-hvac-red hover:bg-hvac-red/90 text-white px-8">
-                  View All Services
-                </Button>
-              </Link>
-              <Button variant="outline" className="border-hvac-yellow text-hvac-yellow hover:bg-hvac-yellow hover:text-black">
-                <Phone className="mr-2 h-4 w-4" />
-                Call for Free Consultation
-              </Button>
-            </div>
-          </div>
-        </div>
-
         {/* Hexagonal Grid Container */}
         <div className="relative max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
