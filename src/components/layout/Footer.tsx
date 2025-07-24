@@ -14,11 +14,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img 
-                src="/lovable-uploads/ee76d6cf-aaf9-4a25-aee4-69b66036b5a6.png" 
-                alt="Temp Kings Air Logo" 
-                className="h-16 w-auto"
-              />
+              <img src="/lovable-uploads/ee76d6cf-aaf9-4a25-aee4-69b66036b5a6.png" alt="Temp Kings Air Logo" className="h-16 w-auto" />
               <div>
                 <div className="font-bold text-xl">Temp Kings Air</div>
                 <div className="text-sm text-gray-400">Rule your comfort</div>
@@ -61,7 +57,7 @@ const Footer = () => {
               <li><Link to="/areas/san-marino" className="text-gray-300 hover:text-white transition-colors">San Marino</Link></li>
               <li><Link to="/areas/arcadia" className="text-gray-300 hover:text-white transition-colors">Arcadia</Link></li>
               <li><Link to="/areas/south-pasadena" className="text-gray-300 hover:text-white transition-colors">South Pasadena</Link></li>
-              <li><Link to="/areas" className="text-hvac-yellow hover:text-white transition-colors">View All Areas</Link></li>
+              
             </ul>
           </div>
 
