@@ -20,10 +20,7 @@ const Footer = () => {
                 <div className="text-sm text-gray-400">Rule your comfort</div>
               </div>
             </div>
-            <p className="text-gray-300 text-sm">
-              Your trusted HVAC partner in Dallas-Fort Worth. We provide reliable heating, 
-              cooling, and air quality services with 24/7 emergency support.
-            </p>
+            <p className="text-gray-300 text-sm">Your trusted HVAC partner in Pasadena. We provide reliable heating, cooling, and air quality services with 24/7 emergency support.</p>
             <div className="flex items-center space-x-1">
               <div className="flex">
                 {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-hvac-yellow text-hvac-yellow" />)}
