@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Phone, Mail, MapPin, Clock, Star } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Star, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { scrollToSection } from '@/utils/scrollUtils';
 const Footer = () => {
@@ -69,6 +69,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className="flex items-center space-x-2">
+                <Award className="h-4 w-4 text-hvac-red" />
                 <span className="text-gray-300">License: 1135339</span>
               </div>
               <div className="flex items-start space-x-2">
