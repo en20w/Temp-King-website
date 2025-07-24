@@ -106,8 +106,10 @@ const Header = () => {
               </button>
               <button 
                 onClick={() => {
-                  // For now, just scroll to top since service areas info isn't on page yet
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  const serviceAreasSection = document.getElementById('service-areas');
+                  if (serviceAreasSection) {
+                    serviceAreasSection.scrollIntoView({ behavior: 'smooth' });
+                  }
                 }}
                 className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200"
               >
