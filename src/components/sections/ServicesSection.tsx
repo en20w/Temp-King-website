@@ -160,42 +160,40 @@ const ServicesSection = () => {
                       </div>
                     </div>
 
-                    {/* Floating Details Popup (positioned based on column position) */}
-                    <div className={`absolute top-1/2 -translate-y-1/2 w-80 z-20 transition-all duration-500 ${
-                      index % 3 === 0 ? `left-full ml-6 ${isHovered ? 'opacity-100 pointer-events-auto' : 'opacity-0 -translate-x-4 pointer-events-none'}` :
-                      index % 3 === 2 ? `right-full mr-6 ${isHovered ? 'opacity-100 pointer-events-auto' : 'opacity-0 translate-x-4 pointer-events-none'}` :
-                      `left-full ml-6 ${isHovered ? 'opacity-100 pointer-events-auto' : 'opacity-0 -translate-x-4 pointer-events-none'}`
-                    }`}>
-                      <div className="relative">
-                        {/* Elegant backdrop with glass effect */}
-                        <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-15 rounded-2xl blur-sm`} />
-                        <div className="relative bg-white/90 backdrop-blur-md rounded-2xl p-6 border border-white/30 shadow-2xl">
-                          {/* Popup arrow */}
-                          <div className={`absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-br ${service.gradient} rotate-45 opacity-80`} />
-                          
-                          {/* Service details with icons */}
-                          <div className="space-y-3 mb-4">
-                            {service.details.map((detail, detailIndex) => <div key={detailIndex} className="flex items-center text-sm text-gray-700">
-                                <Star className="h-4 w-4 text-hvac-yellow mr-3 flex-shrink-0" />
-                                <span className="font-medium">{detail}</span>
-                              </div>)}
-                          </div>
-                          
-                          {/* Enhanced pricing display */}
-                          <div className="flex items-center justify-center pt-2">
-                            <div className={`bg-gradient-to-r ${service.gradient} text-white px-6 py-3 rounded-full text-base font-bold shadow-lg`}>
-                              {service.price}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
-
-                  {/* Floating connection lines */}
-                  {index < services.length - 1 && <div className="hidden lg:block absolute top-1/2 -right-8 w-16 h-px bg-gradient-to-r from-gray-300 to-transparent opacity-30"></div>}
                 </div>;
           })}
+          </div>
+        </div>
+
+        {/* Free Consultation Box */}
+        <div className="mt-16 max-w-4xl mx-auto">
+          <div className="relative bg-gradient-to-br from-hvac-red to-hvac-yellow p-8 rounded-2xl shadow-2xl overflow-hidden">
+            {/* Background decoration */}
+            <div className="absolute inset-0 bg-black/10"></div>
+            <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+            <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
+            
+            <div className="relative z-10 text-center text-white">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                Get Your Free Consultation Today
+              </h3>
+              <p className="text-lg mb-6 opacity-90">
+                Professional HVAC assessment with no obligation. We'll help you find the perfect solution for your needs.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Button 
+                  size="lg" 
+                  className="bg-white text-hvac-red hover:bg-gray-100 font-semibold px-8 py-4 text-lg shadow-lg"
+                >
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call (626) 225-4019
+                </Button>
+                <div className="text-white/90">
+                  <span className="text-sm">Available 24/7 for emergencies</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
