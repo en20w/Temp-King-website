@@ -45,6 +45,33 @@ const Home = () => {
       {/* Services Section */}
       <ServicesSection />
 
+      {/* CTA Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <div className="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Need Help Choosing the Right Service?
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Our experts are standing by to help you find the perfect solution for your HVAC needs.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link to="/services">
+                  <Button className="bg-blue-500 hover:bg-blue-600 text-white px-8">
+                    View All Services
+                  </Button>
+                </Link>
+                <Button variant="outline" className="border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">
+                  <Phone className="mr-2 h-4 w-4" />
+                  Call for Free Consultation
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Enhanced Why Choose Us Section */}
       <EnhancedWhyChooseUs />
 
