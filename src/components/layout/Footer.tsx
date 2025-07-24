@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Phone, Mail, MapPin, Clock, Star, Award } from 'lucide-react';
+import { Phone, MapPin, Clock, Star, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { scrollToSection } from '@/utils/scrollUtils';
 const Footer = () => {
