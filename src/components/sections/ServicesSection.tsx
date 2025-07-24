@@ -38,7 +38,7 @@ const ServicesSection = () => {
     details: ['Annual tune-up services', 'Filter replacement programs', 'Preventive care plans'],
     price: 'Plans from $12/mo'
   }];
-  return <section className="py-0 pb-16 bg-gray-50 relative overflow-hidden">
+  return <section className="py-16 bg-gray-50 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-32 h-32 bg-hvac-red rounded-full blur-3xl"></div>
