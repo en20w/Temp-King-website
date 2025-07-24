@@ -1,5 +1,6 @@
 import React from 'react';
-import { Snowflake, Flame, Wrench, Cog, Thermometer, Fan, Zap, Settings, Wind, Shield, Clock, Home } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Snowflake, Flame, Wrench, Cog, Thermometer, Fan, Zap, Settings, Wind, Shield, Clock, Home, Phone } from 'lucide-react';
 const HeroToServicesTransition = () => {
   return <div className="relative -mt-16 pt-16">
       {/* Diagonal Wave Transition */}
@@ -160,6 +161,29 @@ const HeroToServicesTransition = () => {
           <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in" style={{
           animationDelay: '1s'
         }}>From emergency repairs to complete installations, discover how our certified technicians keep Pasadena comfortable year-round</p>
+
+          {/* CTA Section */}
+          <div className="mt-12 animate-fade-in" style={{
+          animationDelay: '1.2s'
+        }}>
+            <div className="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Need Help Choosing the Right Service?
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Our experts are standing by to help you find the perfect solution for your HVAC needs.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button className="bg-blue-500 hover:bg-blue-600 text-white px-8">
+                  View All Services
+                </Button>
+                <Button variant="outline" className="border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">
+                  <Phone className="mr-2 h-4 w-4" />
+                  Call for Free Consultation
+                </Button>
+              </div>
+            </div>
+          </div>
 
           {/* Scroll Indicator */}
           <div className="mt-12 animate-bounce">
