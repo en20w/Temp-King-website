@@ -1,12 +1,12 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Phone, Clock, Shield } from 'lucide-react';
+import { Phone, Clock, Shield, Users, Wrench, MapPin, Truck, CheckCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import ServicesSection from '@/components/sections/ServicesSection';
 import HeroToServicesTransition from '@/components/sections/HeroToServicesTransition';
 import EnhancedWhyChooseUs from '@/components/sections/EnhancedWhyChooseUs';
 import CreativeScheduleTransition from '@/components/sections/CreativeScheduleTransition';
 import EnhancedInteractiveFlow from '@/components/sections/EnhancedInteractiveFlow';
-import EnhancedServiceAreas from '@/components/sections/EnhancedServiceAreas';
 import FloatingAnimations from '@/components/animations/FloatingAnimations';
 const Home = () => {
   return <div className="space-y-0">
@@ -173,8 +173,234 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Enhanced Service Areas Section */}
-      <EnhancedServiceAreas />
+      {/* Service Areas Section */}
+      <section id="service-areas" className="py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 right-10 w-32 h-32 bg-blue-300 rounded-full blur-3xl animate-float"></div>
+          <div className="absolute bottom-10 left-10 w-40 h-40 bg-white rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
+          <div className="absolute top-1/3 right-1/3 w-24 h-24 bg-blue-300 rounded-full blur-2xl animate-float" style={{animationDelay: '1s'}}></div>
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in">
+              Service Areas
+            </h2>
+            <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto animate-fade-in" style={{animationDelay: '0.2s'}}>
+              Professional HVAC services throughout Pasadena and surrounding communities. 
+              Fast response times and reliable service across the San Gabriel Valley.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-12">
+            {/* Primary Service Area */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.3s'}}>
+              <div className="flex items-center justify-center mb-4">
+                <div className="bg-blue-400 rounded-full w-12 h-12 flex items-center justify-center">
+                  <MapPin className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-center">Pasadena</h3>
+              <div className="space-y-2 text-center">
+                <div className="flex items-center justify-center text-sm">
+                  <CheckCircle className="h-4 w-4 mr-2 text-green-300" />
+                  Primary Coverage
+                </div>
+                <div className="flex items-center justify-center text-sm">
+                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
+                  15-30 min response
+                </div>
+                <div className="flex items-center justify-center text-sm">
+                  <Truck className="h-4 w-4 mr-2 text-blue-300" />
+                  Same-day service
+                </div>
+              </div>
+            </div>
+
+            {/* Los Angeles */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.4s'}}>
+              <div className="flex items-center justify-center mb-4">
+                <div className="bg-blue-400 rounded-full w-12 h-12 flex items-center justify-center">
+                  <MapPin className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-center">Los Angeles</h3>
+              <div className="space-y-2 text-center">
+                <div className="flex items-center justify-center text-sm">
+                  <CheckCircle className="h-4 w-4 mr-2 text-green-300" />
+                  Full Coverage
+                </div>
+                <div className="flex items-center justify-center text-sm">
+                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
+                  30-45 min response
+                </div>
+                <div className="flex items-center justify-center text-sm">
+                  <Truck className="h-4 w-4 mr-2 text-blue-300" />
+                  24/7 emergency
+                </div>
+              </div>
+            </div>
+
+            {/* Glendale */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.5s'}}>
+              <div className="flex items-center justify-center mb-4">
+                <div className="bg-blue-400 rounded-full w-12 h-12 flex items-center justify-center">
+                  <MapPin className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-center">Glendale</h3>
+              <div className="space-y-2 text-center">
+                <div className="flex items-center justify-center text-sm">
+                  <CheckCircle className="h-4 w-4 mr-2 text-green-300" />
+                  Full Coverage
+                </div>
+                <div className="flex items-center justify-center text-sm">
+                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
+                  20-35 min response
+                </div>
+                <div className="flex items-center justify-center text-sm">
+                  <Truck className="h-4 w-4 mr-2 text-blue-300" />
+                  Same-day service
+                </div>
+              </div>
+            </div>
+
+            {/* Burbank */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.6s'}}>
+              <div className="flex items-center justify-center mb-4">
+                <div className="bg-blue-400 rounded-full w-12 h-12 flex items-center justify-center">
+                  <MapPin className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-center">Burbank</h3>
+              <div className="space-y-2 text-center">
+                <div className="flex items-center justify-center text-sm">
+                  <CheckCircle className="h-4 w-4 mr-2 text-green-300" />
+                  Full Coverage
+                </div>
+                <div className="flex items-center justify-center text-sm">
+                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
+                  25-40 min response
+                </div>
+                <div className="flex items-center justify-center text-sm">
+                  <Truck className="h-4 w-4 mr-2 text-blue-300" />
+                  24/7 emergency
+                </div>
+              </div>
+            </div>
+
+            {/* Additional Areas Row */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.7s'}}>
+              <div className="flex items-center justify-center mb-4">
+                <div className="bg-blue-400 rounded-full w-12 h-12 flex items-center justify-center">
+                  <MapPin className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-center">Altadena</h3>
+              <div className="space-y-2 text-center">
+                <div className="flex items-center justify-center text-sm">
+                  <CheckCircle className="h-4 w-4 mr-2 text-green-300" />
+                  Full Coverage
+                </div>
+                <div className="flex items-center justify-center text-sm">
+                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
+                  15-25 min response
+                </div>
+                <div className="flex items-center justify-center text-sm">
+                  <Truck className="h-4 w-4 mr-2 text-blue-300" />
+                  Same-day service
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.8s'}}>
+              <div className="flex items-center justify-center mb-4">
+                <div className="bg-blue-400 rounded-full w-12 h-12 flex items-center justify-center">
+                  <MapPin className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-center">San Marino</h3>
+              <div className="space-y-2 text-center">
+                <div className="flex items-center justify-center text-sm">
+                  <CheckCircle className="h-4 w-4 mr-2 text-green-300" />
+                  Full Coverage
+                </div>
+                <div className="flex items-center justify-center text-sm">
+                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
+                  20-30 min response
+                </div>
+                <div className="flex items-center justify-center text-sm">
+                  <Truck className="h-4 w-4 mr-2 text-blue-300" />
+                  Same-day service
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.9s'}}>
+              <div className="flex items-center justify-center mb-4">
+                <div className="bg-blue-400 rounded-full w-12 h-12 flex items-center justify-center">
+                  <MapPin className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-center">Arcadia</h3>
+              <div className="space-y-2 text-center">
+                <div className="flex items-center justify-center text-sm">
+                  <CheckCircle className="h-4 w-4 mr-2 text-green-300" />
+                  Full Coverage
+                </div>
+                <div className="flex items-center justify-center text-sm">
+                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
+                  25-35 min response
+                </div>
+                <div className="flex items-center justify-center text-sm">
+                  <Truck className="h-4 w-4 mr-2 text-blue-300" />
+                  24/7 emergency
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '1s'}}>
+              <div className="flex items-center justify-center mb-4">
+                <div className="bg-blue-400 rounded-full w-12 h-12 flex items-center justify-center">
+                  <MapPin className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-center">South Pasadena</h3>
+              <div className="space-y-2 text-center">
+                <div className="flex items-center justify-center text-sm">
+                  <CheckCircle className="h-4 w-4 mr-2 text-green-300" />
+                  Full Coverage
+                </div>
+                <div className="flex items-center justify-center text-sm">
+                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
+                  15-25 min response
+                </div>
+                <div className="flex items-center justify-center text-sm">
+                  <Truck className="h-4 w-4 mr-2 text-blue-300" />
+                  Same-day service
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center animate-fade-in" style={{animationDelay: '1.1s'}}>
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto border border-white/20">
+              <h3 className="text-2xl font-bold text-white mb-4">Don't See Your Area?</h3>
+              <p className="text-blue-100 mb-6">
+                We're expanding our service coverage! Call us to check if we can serve your location. 
+                We often provide service beyond our primary areas for the right customers.
+              </p>
+              <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-3 h-auto font-bold">
+                <Phone className="mr-2 h-5 w-5" />
+                Call (626) 400-5300
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>;
 };
 export default Home;
