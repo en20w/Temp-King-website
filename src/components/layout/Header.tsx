@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Phone, MapPin, Clock, ChevronDown } from 'lucide-react';
+import { Phone, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { scrollToSection } from '@/utils/scrollUtils';
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -14,51 +12,6 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  const handleScheduleClick = () => {
-    scrollToSection('schedule-appointment');
-  };
-  const navigationItems = [{
-    title: 'Services',
-    href: '/services',
-    submenu: [{
-      title: 'AC Repair',
-      href: '/services/ac-repair'
-    }, {
-      title: 'Heating Repair',
-      href: '/services/heating-repair'
-    }, {
-      title: 'Installation',
-      href: '/services/installation'
-    }, {
-      title: 'Maintenance',
-      href: '/services/maintenance'
-    }]
-  }, {
-    title: 'Areas',
-    href: '/areas',
-    submenu: [{
-      title: 'Dallas',
-      href: '/areas/dallas'
-    }, {
-      title: 'Fort Worth',
-      href: '/areas/fort-worth'
-    }, {
-      title: 'Plano',
-      href: '/areas/plano'
-    }, {
-      title: 'Arlington',
-      href: '/areas/arlington'
-    }]
-  }, {
-    title: 'About',
-    href: '/about'
-  }, {
-    title: 'Reviews',
-    href: '/reviews'
-  }, {
-    title: 'Contact',
-    href: '/contact'
-  }];
   return <>
       {/* Main Header */}
       <header className={`sticky top-0 z-50 border-b transition-all duration-300 ${isScrolled ? 'shadow-lg' : 'shadow-sm'}`} style={{
@@ -104,10 +57,6 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Navigation Bar */}
-          <div>
-            
-          </div>
         </div>
       </header>
     </>;
