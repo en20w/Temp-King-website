@@ -47,7 +47,7 @@ const HeroToServicesTransition = () => {
 
       {/* Enhanced Floating HVAC Icons */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* First row of icons - spread across full width */}
+        {/* Top area icons */}
         <div className="animate-bounce-1 absolute top-4 left-[8%]" style={{
         animationDelay: '0s'
       }}>
@@ -64,55 +64,72 @@ const HeroToServicesTransition = () => {
           <Fan className="h-11 w-11 text-blue-300/30" />
         </div>
 
-        {/* Second row of icons - better distribution */}
-        <div className="animate-bounce-4 absolute top-16 left-[20%]" style={{
+        {/* Upper-middle area icons */}
+        <div className="animate-bounce-4 absolute top-[25%] left-[15%]" style={{
         animationDelay: '1s'
       }}>
           <Flame className="h-10 w-10 text-red-500/30" />
         </div>
-        <div className="animate-bounce-1 absolute top-20 right-[25%]" style={{
+        <div className="animate-bounce-1 absolute top-[30%] right-[20%]" style={{
         animationDelay: '3s'
       }}>
           <Zap className="h-9 w-9 text-yellow-400/30" />
         </div>
-        <div className="animate-bounce-2 absolute top-14 right-[5%]" style={{
+        <div className="animate-bounce-2 absolute top-[20%] right-[5%]" style={{
         animationDelay: '5s'
       }}>
           <Wind className="h-8 w-8 text-cyan-300/30" />
         </div>
 
-        {/* Third row of icons - even spread */}
-        <div className="animate-bounce-3 absolute top-24 left-[5%]" style={{
+        {/* Middle area icons */}
+        <div className="animate-bounce-3 absolute top-[50%] left-[5%]" style={{
         animationDelay: '2.5s'
       }}>
           <Settings className="h-9 w-9 text-slate-400/30" />
         </div>
-        <div className="animate-bounce-4 absolute top-22 left-[60%]" style={{
+        <div className="animate-bounce-4 absolute top-[45%] left-[60%]" style={{
         animationDelay: '4.5s'
       }}>
           <Wrench className="h-8 w-8 text-slate-400/30" />
         </div>
-        <div className="animate-bounce-1 absolute top-28 right-[15%]" style={{
+        <div className="animate-bounce-1 absolute top-[55%] right-[15%]" style={{
         animationDelay: '1.5s'
       }}>
           <Shield className="h-10 w-10 text-green-400/30" />
         </div>
 
-        {/* Fourth row of icons - full width coverage */}
-        <div className="animate-bounce-2 absolute top-32 left-[30%]" style={{
+        {/* Lower-middle area icons */}
+        <div className="animate-bounce-2 absolute top-[70%] left-[30%]" style={{
         animationDelay: '3.5s'
       }}>
           <Clock className="h-8 w-8 text-yellow-500/30" />
         </div>
-        <div className="animate-bounce-3 absolute top-30 right-[8%]" style={{
+        <div className="animate-bounce-3 absolute top-[75%] right-[8%]" style={{
         animationDelay: '0.5s'
       }}>
           <Home className="h-9 w-9 text-gray-400/30" />
         </div>
-        <div className="animate-bounce-4 absolute top-26 left-[75%]" style={{
+        <div className="animate-bounce-4 absolute top-[65%] left-[75%]" style={{
         animationDelay: '2.8s'
       }}>
           <Cog className="h-14 w-14 text-slate-400/30" />
+        </div>
+
+        {/* Bottom area icons */}
+        <div className="animate-bounce-1 absolute bottom-4 left-[12%]" style={{
+        animationDelay: '1.8s'
+      }}>
+          <Snowflake className="h-10 w-10 text-blue-300/30" />
+        </div>
+        <div className="animate-bounce-2 absolute bottom-8 left-[50%]" style={{
+        animationDelay: '3.8s'
+      }}>
+          <Flame className="h-9 w-9 text-red-400/30" />
+        </div>
+        <div className="animate-bounce-3 absolute bottom-6 right-[12%]" style={{
+        animationDelay: '5.2s'
+      }}>
+          <Thermometer className="h-8 w-8 text-slate-300/30" />
         </div>
       </div>
 
