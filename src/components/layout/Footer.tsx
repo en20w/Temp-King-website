@@ -21,7 +21,7 @@ const Footer = () => {
               />
               <div>
                 <div className="font-bold text-xl">Temp Kings Air</div>
-                <div className="text-sm text-gray-400">Professional HVAC Solutions</div>
+                <div className="text-sm text-gray-400">Rule your comfort</div>
               </div>
             </div>
             <p className="text-gray-300 text-sm">
