@@ -170,7 +170,7 @@ const ServicesSection = () => {
         <div className="mt-16 max-w-4xl mx-auto">
           <div className="relative bg-gradient-to-br from-blue-600 to-cyan-500 p-8 rounded-2xl shadow-2xl overflow-hidden">
             {/* Background decoration */}
-            <div className="absolute inset-0 bg-blue-900/20"></div>
+            <div className="absolute inset-x-0 bottom-0 top-1/2 bg-blue-900/20"></div>
             <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
             
