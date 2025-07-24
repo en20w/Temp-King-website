@@ -202,20 +202,6 @@ const Home = () => {
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-3 text-center">Pasadena</h3>
-              <div className="space-y-2 text-center">
-                <div className="flex items-center justify-center text-sm">
-                  <CheckCircle className="h-4 w-4 mr-2 text-green-300" />
-                  Primary Coverage
-                </div>
-                <div className="flex items-center justify-center text-sm">
-                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
-                  15-30 min response
-                </div>
-                <div className="flex items-center justify-center text-sm">
-                  <Truck className="h-4 w-4 mr-2 text-blue-300" />
-                  Same-day service
-                </div>
-              </div>
             </div>
 
             {/* Los Angeles */}
@@ -226,20 +212,6 @@ const Home = () => {
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-3 text-center">Los Angeles</h3>
-              <div className="space-y-2 text-center">
-                <div className="flex items-center justify-center text-sm">
-                  <CheckCircle className="h-4 w-4 mr-2 text-green-300" />
-                  Full Coverage
-                </div>
-                <div className="flex items-center justify-center text-sm">
-                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
-                  30-45 min response
-                </div>
-                <div className="flex items-center justify-center text-sm">
-                  <Truck className="h-4 w-4 mr-2 text-blue-300" />
-                  24/7 emergency
-                </div>
-              </div>
             </div>
 
             {/* Glendale */}
@@ -250,20 +222,6 @@ const Home = () => {
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-3 text-center">Glendale</h3>
-              <div className="space-y-2 text-center">
-                <div className="flex items-center justify-center text-sm">
-                  <CheckCircle className="h-4 w-4 mr-2 text-green-300" />
-                  Full Coverage
-                </div>
-                <div className="flex items-center justify-center text-sm">
-                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
-                  20-35 min response
-                </div>
-                <div className="flex items-center justify-center text-sm">
-                  <Truck className="h-4 w-4 mr-2 text-blue-300" />
-                  Same-day service
-                </div>
-              </div>
             </div>
 
             {/* Burbank */}
@@ -274,20 +232,6 @@ const Home = () => {
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-3 text-center">Burbank</h3>
-              <div className="space-y-2 text-center">
-                <div className="flex items-center justify-center text-sm">
-                  <CheckCircle className="h-4 w-4 mr-2 text-green-300" />
-                  Full Coverage
-                </div>
-                <div className="flex items-center justify-center text-sm">
-                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
-                  25-40 min response
-                </div>
-                <div className="flex items-center justify-center text-sm">
-                  <Truck className="h-4 w-4 mr-2 text-blue-300" />
-                  24/7 emergency
-                </div>
-              </div>
             </div>
 
             {/* Additional Areas Row */}
@@ -298,20 +242,6 @@ const Home = () => {
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-3 text-center">Altadena</h3>
-              <div className="space-y-2 text-center">
-                <div className="flex items-center justify-center text-sm">
-                  <CheckCircle className="h-4 w-4 mr-2 text-green-300" />
-                  Full Coverage
-                </div>
-                <div className="flex items-center justify-center text-sm">
-                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
-                  15-25 min response
-                </div>
-                <div className="flex items-center justify-center text-sm">
-                  <Truck className="h-4 w-4 mr-2 text-blue-300" />
-                  Same-day service
-                </div>
-              </div>
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.8s'}}>
@@ -321,20 +251,6 @@ const Home = () => {
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-3 text-center">San Marino</h3>
-              <div className="space-y-2 text-center">
-                <div className="flex items-center justify-center text-sm">
-                  <CheckCircle className="h-4 w-4 mr-2 text-green-300" />
-                  Full Coverage
-                </div>
-                <div className="flex items-center justify-center text-sm">
-                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
-                  20-30 min response
-                </div>
-                <div className="flex items-center justify-center text-sm">
-                  <Truck className="h-4 w-4 mr-2 text-blue-300" />
-                  Same-day service
-                </div>
-              </div>
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.9s'}}>
@@ -344,20 +260,6 @@ const Home = () => {
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-3 text-center">Arcadia</h3>
-              <div className="space-y-2 text-center">
-                <div className="flex items-center justify-center text-sm">
-                  <CheckCircle className="h-4 w-4 mr-2 text-green-300" />
-                  Full Coverage
-                </div>
-                <div className="flex items-center justify-center text-sm">
-                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
-                  25-35 min response
-                </div>
-                <div className="flex items-center justify-center text-sm">
-                  <Truck className="h-4 w-4 mr-2 text-blue-300" />
-                  24/7 emergency
-                </div>
-              </div>
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '1s'}}>
@@ -367,20 +269,6 @@ const Home = () => {
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-3 text-center">South Pasadena</h3>
-              <div className="space-y-2 text-center">
-                <div className="flex items-center justify-center text-sm">
-                  <CheckCircle className="h-4 w-4 mr-2 text-green-300" />
-                  Full Coverage
-                </div>
-                <div className="flex items-center justify-center text-sm">
-                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
-                  15-25 min response
-                </div>
-                <div className="flex items-center justify-center text-sm">
-                  <Truck className="h-4 w-4 mr-2 text-blue-300" />
-                  Same-day service
-                </div>
-              </div>
             </div>
           </div>
 
