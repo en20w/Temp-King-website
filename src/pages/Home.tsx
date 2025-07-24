@@ -109,7 +109,7 @@ const Home = () => {
           animationDelay: '0.4s'
         }}>
             <p className="text-blue-100 text-sm">
-              Available 24/7 for emergency services • Free estimates on new installations
+              Available 24/7 for emergency services
             </p>
           </div>
         </div>
