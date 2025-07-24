@@ -196,8 +196,8 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-12">
             {/* Pasadena */}
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.3s'}}>
-              <div className="bg-gray-600/50 rounded-xl h-32 mb-4 flex items-center justify-center">
-                <span className="text-white/60 text-sm">Photo Coming Soon</span>
+              <div className="bg-cover bg-center rounded-xl h-32 mb-4 flex items-end justify-center relative" style={{backgroundImage: 'url(/lovable-uploads/2ffba697-f037-4dc7-bd58-a2b538a61b3c.png)'}}>
+                <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
               </div>
               <h3 className="text-lg font-bold text-center">Pasadena</h3>
             </div>
