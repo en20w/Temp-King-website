@@ -212,8 +212,8 @@ const Home = () => {
 
             {/* Glendale */}
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.5s'}}>
-              <div className="bg-gray-600/50 rounded-xl h-32 mb-4 flex items-center justify-center">
-                <span className="text-white/60 text-sm">Photo Coming Soon</span>
+              <div className="bg-cover bg-center rounded-xl h-32 mb-4 flex items-end justify-center relative" style={{backgroundImage: 'url(/lovable-uploads/e666fdcc-5495-4c7f-81ef-604ea4d3d218.png)'}}>
+                <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
               </div>
               <h3 className="text-lg font-bold text-center">Glendale</h3>
             </div>
