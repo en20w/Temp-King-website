@@ -21,7 +21,7 @@ const Home = () => {
           <div className="max-w-4xl mx-auto text-center space-y-6">            
             <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white">
               Dallas-Fort Worth's
-              <span className="block text-blue-400">PaTrusted HVAC Experts</span>
+              <span className="block text-blue-400">Trusted HVAC Experts</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto">
