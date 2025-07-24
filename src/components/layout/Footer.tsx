@@ -69,10 +69,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className="flex items-center space-x-2">
-                <Mail className="h-4 w-4 text-hvac-red" />
-                <a href="mailto:info@hvacproservice.com" className="text-gray-300 hover:text-white transition-colors">
-                  info@hvacproservice.com
-                </a>
+                <span className="text-gray-300">License: 1135339</span>
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 text-hvac-red mt-0.5" />
