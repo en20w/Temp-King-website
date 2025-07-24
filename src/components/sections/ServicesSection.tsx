@@ -46,6 +46,17 @@ const ServicesSection = () => {
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+            Services We Offer
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Professional HVAC services for your home and business. From emergency repairs to complete installations, 
+            we provide reliable solutions to keep you comfortable year-round.
+          </p>
+        </div>
+
         {/* Hexagonal Grid Container */}
         <div className="relative max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
