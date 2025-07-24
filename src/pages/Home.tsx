@@ -194,81 +194,68 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-12">
-            {/* Primary Service Area */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.3s'}}>
-              <div className="flex items-center justify-center mb-4">
-                <div className="bg-blue-400 rounded-full w-12 h-12 flex items-center justify-center">
-                  <MapPin className="h-6 w-6 text-white" />
-                </div>
+            {/* Pasadena */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.3s'}}>
+              <div className="bg-gray-600/50 rounded-xl h-32 mb-4 flex items-center justify-center">
+                <span className="text-white/60 text-sm">Photo Coming Soon</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Pasadena</h3>
+              <h3 className="text-lg font-bold text-center">Pasadena</h3>
             </div>
 
             {/* Los Angeles */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.4s'}}>
-              <div className="flex items-center justify-center mb-4">
-                <div className="bg-blue-400 rounded-full w-12 h-12 flex items-center justify-center">
-                  <MapPin className="h-6 w-6 text-white" />
-                </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.4s'}}>
+              <div className="bg-gray-600/50 rounded-xl h-32 mb-4 flex items-center justify-center">
+                <span className="text-white/60 text-sm">Photo Coming Soon</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Los Angeles</h3>
+              <h3 className="text-lg font-bold text-center">Los Angeles</h3>
             </div>
 
             {/* Glendale */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.5s'}}>
-              <div className="flex items-center justify-center mb-4">
-                <div className="bg-blue-400 rounded-full w-12 h-12 flex items-center justify-center">
-                  <MapPin className="h-6 w-6 text-white" />
-                </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.5s'}}>
+              <div className="bg-gray-600/50 rounded-xl h-32 mb-4 flex items-center justify-center">
+                <span className="text-white/60 text-sm">Photo Coming Soon</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Glendale</h3>
+              <h3 className="text-lg font-bold text-center">Glendale</h3>
             </div>
 
             {/* Burbank */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.6s'}}>
-              <div className="flex items-center justify-center mb-4">
-                <div className="bg-blue-400 rounded-full w-12 h-12 flex items-center justify-center">
-                  <MapPin className="h-6 w-6 text-white" />
-                </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.6s'}}>
+              <div className="bg-gray-600/50 rounded-xl h-32 mb-4 flex items-center justify-center">
+                <span className="text-white/60 text-sm">Photo Coming Soon</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Burbank</h3>
+              <h3 className="text-lg font-bold text-center">Burbank</h3>
             </div>
 
-            {/* Additional Areas Row */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.7s'}}>
-              <div className="flex items-center justify-center mb-4">
-                <div className="bg-blue-400 rounded-full w-12 h-12 flex items-center justify-center">
-                  <MapPin className="h-6 w-6 text-white" />
-                </div>
+            {/* Altadena */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.7s'}}>
+              <div className="bg-gray-600/50 rounded-xl h-32 mb-4 flex items-center justify-center">
+                <span className="text-white/60 text-sm">Photo Coming Soon</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Altadena</h3>
+              <h3 className="text-lg font-bold text-center">Altadena</h3>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.8s'}}>
-              <div className="flex items-center justify-center mb-4">
-                <div className="bg-blue-400 rounded-full w-12 h-12 flex items-center justify-center">
-                  <MapPin className="h-6 w-6 text-white" />
-                </div>
+            {/* San Marino */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.8s'}}>
+              <div className="bg-gray-600/50 rounded-xl h-32 mb-4 flex items-center justify-center">
+                <span className="text-white/60 text-sm">Photo Coming Soon</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center">San Marino</h3>
+              <h3 className="text-lg font-bold text-center">San Marino</h3>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.9s'}}>
-              <div className="flex items-center justify-center mb-4">
-                <div className="bg-blue-400 rounded-full w-12 h-12 flex items-center justify-center">
-                  <MapPin className="h-6 w-6 text-white" />
-                </div>
+            {/* Arcadia */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.9s'}}>
+              <div className="bg-gray-600/50 rounded-xl h-32 mb-4 flex items-center justify-center">
+                <span className="text-white/60 text-sm">Photo Coming Soon</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Arcadia</h3>
+              <h3 className="text-lg font-bold text-center">Arcadia</h3>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '1s'}}>
-              <div className="flex items-center justify-center mb-4">
-                <div className="bg-blue-400 rounded-full w-12 h-12 flex items-center justify-center">
-                  <MapPin className="h-6 w-6 text-white" />
-                </div>
+            {/* South Pasadena */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '1s'}}>
+              <div className="bg-gray-600/50 rounded-xl h-32 mb-4 flex items-center justify-center">
+                <span className="text-white/60 text-sm">Photo Coming Soon</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center">South Pasadena</h3>
+              <h3 className="text-lg font-bold text-center">South Pasadena</h3>
             </div>
           </div>
 
