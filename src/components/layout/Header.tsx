@@ -57,6 +57,65 @@ const Header = () => {
             </div>
           </div>
 
+          {/* Navigation Bar */}
+          <div className="border-t border-blue-400/30">
+            <div className="flex items-center justify-center py-4 space-x-8">
+              <button 
+                onClick={() => {
+                  const servicesSection = document.getElementById('services-section');
+                  if (servicesSection) {
+                    servicesSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200"
+              >
+                Services
+              </button>
+              <button 
+                onClick={() => {
+                  const scheduleSection = document.getElementById('schedule-appointment');
+                  if (scheduleSection) {
+                    scheduleSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200"
+              >
+                Schedule an Appointment
+              </button>
+              <button 
+                onClick={() => {
+                  // Find the Hours of Operation section by looking for the heading text
+                  const headings = document.querySelectorAll('h2, h3');
+                  let hoursSection = null;
+                  for (let heading of headings) {
+                    if (heading.textContent?.includes('Hours of Operation')) {
+                      hoursSection = heading.closest('section');
+                      break;
+                    }
+                  }
+                  if (hoursSection) {
+                    hoursSection.scrollIntoView({ behavior: 'smooth' });
+                  } else {
+                    // Fallback - scroll to bottom where hours section should be
+                    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+                  }
+                }}
+                className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200"
+              >
+                Hours of Operation
+              </button>
+              <button 
+                onClick={() => {
+                  // For now, just scroll to top since service areas info isn't on page yet
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200"
+              >
+                Service Areas
+              </button>
+            </div>
+          </div>
+
         </div>
       </header>
     </>;
