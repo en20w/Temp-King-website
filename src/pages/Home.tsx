@@ -90,7 +90,7 @@ const Home = () => {
       </section>
 
       {/* Hours of Operation Section */}
-      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+      <section id="hours-of-operation" className="py-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
