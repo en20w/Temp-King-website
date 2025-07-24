@@ -13,10 +13,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="bg-hvac-red text-white p-2 rounded-lg">
-                <span className="font-bold text-xl">HVAC</span>
-              </div>
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/temp-kings-logo.png" 
+                alt="Temp Kings Air Logo" 
+                className="h-16 w-auto"
+              />
               <div>
                 <div className="font-bold text-xl">Temp Kings Air</div>
                 <div className="text-sm text-gray-400">Professional HVAC Solutions</div>
