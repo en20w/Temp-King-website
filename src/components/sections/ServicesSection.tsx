@@ -168,9 +168,9 @@ const ServicesSection = () => {
 
         {/* Free Consultation Box */}
         <div className="mt-16 max-w-4xl mx-auto">
-          <div className="relative bg-gradient-to-br from-hvac-red to-hvac-yellow p-8 rounded-2xl shadow-2xl overflow-hidden">
+          <div className="relative bg-gradient-to-br from-blue-600 to-cyan-500 p-8 rounded-2xl shadow-2xl overflow-hidden">
             {/* Background decoration */}
-            <div className="absolute inset-0 bg-black/10"></div>
+            <div className="absolute inset-0 bg-blue-900/20"></div>
             <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
             
@@ -184,7 +184,7 @@ const ServicesSection = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button 
                   size="lg" 
-                  className="bg-white text-hvac-red hover:bg-gray-100 font-semibold px-8 py-4 text-lg shadow-lg"
+                  className="bg-white text-blue-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg shadow-lg"
                 >
                   <Phone className="mr-2 h-5 w-5" />
                   Call (626) 225-4019
