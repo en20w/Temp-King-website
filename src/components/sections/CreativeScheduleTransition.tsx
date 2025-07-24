@@ -5,6 +5,6 @@ const CreativeScheduleTransition = () => {
   const handleScheduleClick = () => {
     scrollToSection('schedule-appointment');
   };
-  return;
+  return null;
 };
 export default CreativeScheduleTransition;
