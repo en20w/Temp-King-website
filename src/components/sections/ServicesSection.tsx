@@ -148,7 +148,7 @@ const ServicesSection = () => {
                       </h3>
 
                       {/* Service Description */}
-                      <p className={`text-sm text-gray-600 mb-3 transition-all duration-500 leading-relaxed max-w-[90%] ${isHovered ? 'opacity-70' : 'opacity-100'}`}>
+                      <p className={`text-sm text-gray-600 mb-3 transition-all duration-500 leading-relaxed max-w-[90%] h-10 ${isHovered ? 'opacity-70' : 'opacity-100'}`}>
                         {service.description}
                       </p>
 
