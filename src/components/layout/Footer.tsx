@@ -14,7 +14,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img src="/lovable-uploads/ee76d6cf-aaf9-4a25-aee4-69b66036b5a6.png" alt="Temp Kings Air Logo" className="h-16 w-auto" />
+              <img src="/lovable-uploads/033eeacb-5dce-4d4c-a236-c77fa4146550.png" alt="Temp Kings Air Logo" className="h-16 w-auto" />
               <div>
                 <div className="font-bold text-xl">Temp Kings Air</div>
                 <div className="text-sm text-gray-400">Rule your comfort</div>
