@@ -45,9 +45,6 @@ const Home = () => {
       {/* Services Section */}
       <ServicesSection />
 
-      {/* Enhanced Why Choose Us Section */}
-      <EnhancedWhyChooseUs />
-
       {/* CTA Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -74,6 +71,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Enhanced Why Choose Us Section */}
+      <EnhancedWhyChooseUs />
 
       {/* Creative Schedule Transition */}
       <CreativeScheduleTransition />
