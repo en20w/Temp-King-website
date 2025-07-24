@@ -33,7 +33,7 @@ const Header = () => {
 
             {/* Center - Logo */}
             <Link to="/" className="flex flex-col items-center">
-              <img src="/lovable-uploads/3a34478a-6ec3-4ec8-b2ba-d58adf9728d6.png" alt="Temp Kings Air Logo" className="h-24 w-auto mb-2" />
+              <img src="/lovable-uploads/3a34478a-6ec3-4ec8-b2ba-d58adf9728d6.png" alt="Temp Kings Air Logo" className="h-16 w-auto mb-2" />
               <div className="flex flex-col items-center">
                 <div className="font-bold text-2xl text-white leading-tight">TEMP KINGS AIR</div>
                 <div className="text-sm text-blue-200 leading-tight tracking-wide mt-1">Rule your comfort</div>
