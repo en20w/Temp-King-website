@@ -191,7 +191,15 @@ const HeroToServicesTransition = () => {
                 Our experts are standing by to help you find the perfect solution for your HVAC needs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button className="bg-blue-500 hover:bg-blue-600 text-white px-8">
+                <Button 
+                  className="bg-blue-500 hover:bg-blue-600 text-white px-8"
+                  onClick={() => {
+                    const servicesSection = document.getElementById('services-section');
+                    if (servicesSection) {
+                      servicesSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                >
                   View All Services
                 </Button>
                 <Button variant="outline" className="border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">
