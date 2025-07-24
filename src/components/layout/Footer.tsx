@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Phone, Mail, MapPin, Clock, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { scrollToSection } from '@/utils/scrollUtils';
+import hvacLogo from '@/assets/hvac-proservice-logo.png';
 
 const Footer = () => {
   const handleScheduleClick = () => {
@@ -18,9 +19,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="bg-hvac-red text-white p-2 rounded-lg">
-                <span className="font-bold text-xl">HVAC</span>
-              </div>
+              <img 
+                src={hvacLogo} 
+                alt="HVAC ProService Logo" 
+                className="w-12 h-12 object-contain"
+              />
               <div>
                 <div className="font-bold text-xl">ProService</div>
                 <div className="text-sm text-gray-400">Professional HVAC Solutions</div>
