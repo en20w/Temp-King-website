@@ -24,7 +24,7 @@ const EnhancedInteractiveFlow = () => {
     name: 'Emergency Repair',
     icon: Zap,
     time: '30 mins response',
-    price: 'Starting at $89',
+    price: 'Free estimate',
     urgency: 'urgent',
     description: 'Immediate response for heating/cooling failures'
   }, {
@@ -32,7 +32,7 @@ const EnhancedInteractiveFlow = () => {
     name: 'Maintenance Service',
     icon: Clock,
     time: '2-4 hours',
-    price: 'Starting at $149',
+    price: 'Free estimate',
     urgency: 'normal',
     description: 'Regular tune-ups and system checks'
   }, {

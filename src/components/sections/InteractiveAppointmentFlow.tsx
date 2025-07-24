@@ -14,8 +14,8 @@ const InteractiveAppointmentFlow = () => {
   ];
 
   const services = [
-    { id: 'emergency', name: 'Emergency Repair', time: '30 mins', price: 'Starting at $89' },
-    { id: 'maintenance', name: 'Maintenance', time: '2 hours', price: 'Starting at $149' },
+    { id: 'emergency', name: 'Emergency Repair', time: '30 mins', price: 'Free estimate' },
+    { id: 'maintenance', name: 'Maintenance', time: '2 hours', price: 'Free estimate' },
     { id: 'installation', name: 'New Installation', time: 'Same day', price: 'Free estimate' }
   ];
 

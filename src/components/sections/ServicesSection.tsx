@@ -12,7 +12,7 @@ const ServicesSection = () => {
     link: '/services/ac-repair',
     gradient: 'from-blue-500 to-cyan-400',
     details: ['Emergency repairs available', 'Same-day service guarantee', 'All major brands serviced'],
-    price: 'Starting at $89'
+    price: 'Free estimate'
   }, {
     title: 'Heating Repair',
     description: 'Professional heating system repair and maintenance',
@@ -20,7 +20,7 @@ const ServicesSection = () => {
     link: '/services/heating-repair',
     gradient: 'from-red-500 to-orange-400',
     details: ['Furnace repair & service', 'Heat pump maintenance', 'Boiler system repair'],
-    price: 'Starting at $99'
+    price: 'Free estimate'
   }, {
     title: 'Installation',
     description: 'Complete HVAC system installation services',
@@ -28,7 +28,7 @@ const ServicesSection = () => {
     link: '/services/installation',
     gradient: 'from-green-500 to-emerald-400',
     details: ['New system installations', 'Energy efficient upgrades', 'Complete system replacements'],
-    price: 'Free estimates'
+    price: 'Free estimate'
   }, {
     title: 'Maintenance',
     description: 'Regular maintenance to keep your system running efficiently',
@@ -36,7 +36,7 @@ const ServicesSection = () => {
     link: '/services/maintenance',
     gradient: 'from-purple-500 to-violet-400',
     details: ['Annual tune-up services', 'Filter replacement programs', 'Preventive care plans'],
-    price: 'Plans from $12/mo'
+    price: 'Free estimate'
   }];
   return <section id="services-section" className="py-16 bg-gray-50 relative overflow-hidden">
       {/* Background decorative elements */}
