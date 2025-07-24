@@ -53,11 +53,14 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4 text-hvac-yellow">Service Areas</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/areas/dallas" className="text-gray-300 hover:text-white transition-colors">Dallas</Link></li>
-              <li><Link to="/areas/fort-worth" className="text-gray-300 hover:text-white transition-colors">Fort Worth</Link></li>
-              <li><Link to="/areas/plano" className="text-gray-300 hover:text-white transition-colors">Plano</Link></li>
-              <li><Link to="/areas/arlington" className="text-gray-300 hover:text-white transition-colors">Arlington</Link></li>
-              <li><Link to="/areas/irving" className="text-gray-300 hover:text-white transition-colors">Irving</Link></li>
+              <li><Link to="/areas/pasadena" className="text-gray-300 hover:text-white transition-colors">Pasadena</Link></li>
+              <li><Link to="/areas/los-angeles" className="text-gray-300 hover:text-white transition-colors">Los Angeles</Link></li>
+              <li><Link to="/areas/glendale" className="text-gray-300 hover:text-white transition-colors">Glendale</Link></li>
+              <li><Link to="/areas/burbank" className="text-gray-300 hover:text-white transition-colors">Burbank</Link></li>
+              <li><Link to="/areas/altadena" className="text-gray-300 hover:text-white transition-colors">Altadena</Link></li>
+              <li><Link to="/areas/san-marino" className="text-gray-300 hover:text-white transition-colors">San Marino</Link></li>
+              <li><Link to="/areas/arcadia" className="text-gray-300 hover:text-white transition-colors">Arcadia</Link></li>
+              <li><Link to="/areas/south-pasadena" className="text-gray-300 hover:text-white transition-colors">South Pasadena</Link></li>
               <li><Link to="/areas" className="text-hvac-yellow hover:text-white transition-colors">View All Areas</Link></li>
             </ul>
           </div>
