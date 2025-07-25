@@ -17,7 +17,7 @@ const Header = () => {
       background: 'linear-gradient(135deg, #1e40af 0%, #3b82f6 25%, #2563eb 50%, #1d4ed8 75%, #1e3a8a 100%)'
     }}>
         <div className="max-w-7xl mx-auto px-8 relative">
-          <div className="flex items-center justify-between h-56">
+          <div className="flex items-center justify-between h-48">
             {/* Left Section - Location + Financing */}
             <div className="flex items-center space-x-6">
               <div className="flex items-center text-white">
@@ -32,7 +32,7 @@ const Header = () => {
 
             {/* Center - Logo */}
             <Link to="/" className="flex flex-col items-center mt-2">
-              <img src="/lovable-uploads/8e96ab51-028f-4f6d-b8f0-133dbd16a69d.png" alt="Temp Kings Air Logo" className="h-52 w-auto mb-2" />
+              <img src="/lovable-uploads/8e96ab51-028f-4f6d-b8f0-133dbd16a69d.png" alt="Temp Kings Air Logo" className="h-44 w-auto mb-2" />
               
             </Link>
 
