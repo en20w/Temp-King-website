@@ -14,7 +14,7 @@ const Header = () => {
   return <>
       {/* Main Header */}
       <header className={`sticky top-0 z-50 border-b transition-all duration-300 ${isScrolled ? 'shadow-lg' : 'shadow-sm'}`} style={{
-      background: 'linear-gradient(135deg, #1e40af 0%, #3b82f6 25%, #2563eb 50%, #1d4ed8 75%, #1e3a8a 100%)'
+      background: 'linear-gradient(135deg, #3b82f6 0%, #60a5fa 25%, #3b82f6 50%, #2563eb 75%, #1d4ed8 100%)'
     }}>
         <div className="max-w-7xl mx-auto px-8 relative">
           <div className="flex items-center justify-between h-48">
