@@ -54,7 +54,7 @@ const Header = () => {
           </div>
 
           {/* Navigation Bar */}
-          <div className="border-t border-blue-400/30">
+          <div className="">
             <div className="flex items-center justify-between py-4">
               {/* Left Navigation Group */}
               <div className="flex items-center space-x-6">
