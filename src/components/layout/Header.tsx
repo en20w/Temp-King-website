@@ -17,17 +17,27 @@ const Header = () => {
       background: 'linear-gradient(180deg, #1d4ed8 0%, #2563eb 25%, #3b82f6 50%, #60a5fa 75%, #93c5fd 100%)'
     }}>
         <div className="max-w-7xl mx-auto px-8 relative">
-          <div className="flex flex-col items-center justify-center h-48 space-y-4">
-            {/* Top Row - Location and Contact */}
-            <div className="flex items-center justify-center space-x-12">
+          <div className="flex items-center justify-between h-48">
+            {/* Left Section - Location + Financing */}
+            <div className="flex items-center space-x-6">
               <div className="flex items-center text-white">
                 <MapPin className="h-5 w-5 mr-2" />
                 <div>
                   <div className="font-medium text-lg">Serving Greater Los Angeles</div>
                   <div className="text-base text-blue-200">and Surrounding Areas</div>
+                  
                 </div>
               </div>
+            </div>
+
+            {/* Center - Logo */}
+            <Link to="/" className="flex flex-col items-center mt-2">
+              <img src="/lovable-uploads/8e96ab51-028f-4f6d-b8f0-133dbd16a69d.png" alt="Temp Kings Air Logo" className="h-44 w-auto mb-2" />
               
+            </Link>
+
+            {/* Right Section - Emergency Info + Schedule Button */}
+            <div className="flex items-center space-x-6">
               <div className="flex items-center text-white">
                 <Phone className="h-5 w-5 mr-2" />
                 <div>
@@ -37,14 +47,10 @@ const Header = () => {
                       626-400-5300
                     </a>
                   </div>
+                  
                 </div>
               </div>
             </div>
-
-            {/* Center - Logo */}
-            <Link to="/" className="flex flex-col items-center">
-              <img src="/lovable-uploads/8e96ab51-028f-4f6d-b8f0-133dbd16a69d.png" alt="Temp Kings Air Logo" className="h-36 w-auto" />
-            </Link>
           </div>
 
           {/* Navigation Bar - Positioned at bottom */}
