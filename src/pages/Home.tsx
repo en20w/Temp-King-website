@@ -53,7 +53,7 @@ const Home = () => {
       <CreativeScheduleTransition />
 
       {/* Enhanced Interactive Schedule Appointment Section */}
-      <section id="schedule-appointment" className="py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 relative overflow-hidden">
+      <section id="schedule-appointment" className="py-12 md:py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 relative overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-32 h-32 bg-blue-300 rounded-full blur-3xl animate-float"></div>
