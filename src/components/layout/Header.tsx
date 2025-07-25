@@ -58,20 +58,20 @@ const Header = () => {
             <div className="flex items-center justify-between">
               {/* Left Navigation Group */}
               <div className="flex items-center space-x-6">
-                <button onClick={() => scrollToSection('services-section')} className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200">
+                <button onClick={() => scrollToSection('services-section')} className="text-white hover:text-blue-200 font-medium text-base transition-colors duration-200">
                   Services
                 </button>
-                <button onClick={() => scrollToSection('schedule-appointment')} className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200">
+                <button onClick={() => scrollToSection('schedule-appointment')} className="text-white hover:text-blue-200 font-medium text-base transition-colors duration-200">
                   Schedule an Appointment
                 </button>
               </div>
               
               {/* Right Navigation Group */}
               <div className="flex items-center space-x-6">
-                <button onClick={() => scrollToSection('hours-of-operation')} className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200">
+                <button onClick={() => scrollToSection('hours-of-operation')} className="text-white hover:text-blue-200 font-medium text-base transition-colors duration-200">
                   Hours of Operation
                 </button>
-                <button onClick={() => scrollToSection('service-areas')} className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200">
+                <button onClick={() => scrollToSection('service-areas')} className="text-white hover:text-blue-200 font-medium text-base transition-colors duration-200">
                   Service Areas
                 </button>
               </div>
