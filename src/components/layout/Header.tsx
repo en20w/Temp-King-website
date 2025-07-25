@@ -16,8 +16,8 @@ const Header = () => {
       <header className={`sticky top-0 z-50 border-b transition-all duration-300 ${isScrolled ? 'shadow-lg' : 'shadow-sm'}`} style={{
       background: 'linear-gradient(135deg, #1e40af 0%, #3b82f6 25%, #2563eb 50%, #1d4ed8 75%, #1e3a8a 100%)'
     }}>
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="flex items-center justify-between h-42">
+        <div className="max-w-7xl mx-auto px-8 relative">
+          <div className="flex items-center justify-between h-56">
             {/* Left Section - Location + Financing */}
             <div className="flex items-center space-x-6">
               <div className="flex items-center text-white">
@@ -53,9 +53,9 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Navigation Bar */}
-          <div className="">
-            <div className="flex items-center justify-between py-4">
+          {/* Navigation Bar - Positioned at bottom */}
+          <div className="absolute bottom-2 left-8 right-8">
+            <div className="flex items-center justify-between">
               {/* Left Navigation Group */}
               <div className="flex items-center space-x-6">
                 <button onClick={() => scrollToSection('services-section')} className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200">
