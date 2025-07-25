@@ -134,7 +134,7 @@ const HeroToServicesTransition = () => {
       </div>
 
       {/* Animated Section Header */}
-      <div className="relative z-10 text-center pt-24 pb-16">
+      <div className="relative z-10 text-center pt-12 md:pt-24 pb-8 md:pb-16">
         <div className="container mx-auto px-4">
           {/* Animated Stats Counter */}
           <div className="flex justify-center items-center mb-8 space-x-8">
