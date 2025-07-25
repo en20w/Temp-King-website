@@ -258,13 +258,6 @@ const Home = () => {
               <h3 className="text-lg font-bold text-center">Arcadia</h3>
             </div>
 
-            {/* South Pasadena */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '1s'}}>
-              <div className="bg-gray-600/50 rounded-xl h-32 mb-4 flex items-center justify-center">
-                <span className="text-white/60 text-sm">Photo Coming Soon</span>
-              </div>
-              <h3 className="text-lg font-bold text-center">South Pasadena</h3>
-            </div>
           </div>
 
           {/* Call to Action */}
