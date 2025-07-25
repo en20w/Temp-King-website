@@ -2,10 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Phone, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { scrollToSection } from '@/utils/scrollUtils';
-
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -35,10 +33,7 @@ const Header = () => {
             {/* Center - Logo */}
             <Link to="/" className="flex flex-col items-center mt-2">
               <img src="/lovable-uploads/8e96ab51-028f-4f6d-b8f0-133dbd16a69d.png" alt="Temp Kings Air Logo" className="h-16 w-auto mb-2" />
-              <div className="flex flex-col items-center">
-                <div className="font-bold text-2xl text-white leading-tight">TEMP KINGS AIR</div>
-                <div className="text-sm text-blue-200 leading-tight tracking-wide mt-1">Rule your comfort</div>
-              </div>
+              
             </Link>
 
             {/* Right Section - Emergency Info + Schedule Button */}
@@ -63,32 +58,20 @@ const Header = () => {
             <div className="flex items-center justify-between py-4">
               {/* Left Navigation Group */}
               <div className="flex items-center space-x-6">
-                <button 
-                  onClick={() => scrollToSection('services-section')}
-                  className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200"
-                >
+                <button onClick={() => scrollToSection('services-section')} className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200">
                   Services
                 </button>
-                <button 
-                  onClick={() => scrollToSection('schedule-appointment')}
-                  className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200"
-                >
+                <button onClick={() => scrollToSection('schedule-appointment')} className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200">
                   Schedule an Appointment
                 </button>
               </div>
               
               {/* Right Navigation Group */}
               <div className="flex items-center space-x-6">
-                <button 
-                  onClick={() => scrollToSection('hours-of-operation')}
-                  className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200"
-                >
+                <button onClick={() => scrollToSection('hours-of-operation')} className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200">
                   Hours of Operation
                 </button>
-                <button 
-                  onClick={() => scrollToSection('service-areas')}
-                  className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200"
-                >
+                <button onClick={() => scrollToSection('service-areas')} className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200">
                   Service Areas
                 </button>
               </div>
