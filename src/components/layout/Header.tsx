@@ -33,7 +33,7 @@ const Header = () => {
             </div>
 
             {/* Center - Logo */}
-            <Link to="/" className="flex flex-col items-center">
+            <Link to="/" className="flex flex-col items-center mt-2">
               <img src="/lovable-uploads/033eeacb-5dce-4d4c-a236-c77fa4146550.png" alt="Temp Kings Air Logo" className="h-16 w-auto mb-2" />
               <div className="flex flex-col items-center">
                 <div className="font-bold text-2xl text-white leading-tight">TEMP KINGS AIR</div>
@@ -60,31 +60,38 @@ const Header = () => {
 
           {/* Navigation Bar */}
           <div className="border-t border-blue-400/30">
-            <div className="flex items-center justify-center py-4 space-x-8">
-              <button 
-                onClick={() => scrollToSection('services-section')}
-                className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200"
-              >
-                Services
-              </button>
-              <button 
-                onClick={() => scrollToSection('schedule-appointment')}
-                className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200"
-              >
-                Schedule an Appointment
-              </button>
-              <button 
-                onClick={() => scrollToSection('hours-of-operation')}
-                className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200"
-              >
-                Hours of Operation
-              </button>
-              <button 
-                onClick={() => scrollToSection('service-areas')}
-                className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200"
-              >
-                Service Areas
-              </button>
+            <div className="flex items-center justify-between py-4">
+              {/* Left Navigation Group */}
+              <div className="flex items-center space-x-6">
+                <button 
+                  onClick={() => scrollToSection('services-section')}
+                  className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200"
+                >
+                  Services
+                </button>
+                <button 
+                  onClick={() => scrollToSection('schedule-appointment')}
+                  className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200"
+                >
+                  Schedule an Appointment
+                </button>
+              </div>
+              
+              {/* Right Navigation Group */}
+              <div className="flex items-center space-x-6">
+                <button 
+                  onClick={() => scrollToSection('hours-of-operation')}
+                  className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200"
+                >
+                  Hours of Operation
+                </button>
+                <button 
+                  onClick={() => scrollToSection('service-areas')}
+                  className="text-white hover:text-blue-200 font-medium text-sm transition-colors duration-200"
+                >
+                  Service Areas
+                </button>
+              </div>
             </div>
           </div>
 
