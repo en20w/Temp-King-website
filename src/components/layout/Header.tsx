@@ -22,7 +22,7 @@ const Header = () => {
             {/* Mobile: Logo centered at top */}
             <div className="flex justify-center py-4">
               <Link to="/" className="flex flex-col items-center">
-                <img src="/lovable-uploads/8e96ab51-028f-4f6d-b8f0-133dbd16a69d.png" alt="Temp Kings Air Logo" className="h-20 w-auto" />
+                <img src="/lovable-uploads/8e96ab51-028f-4f6d-b8f0-133dbd16a69d.png" alt="Temp Kings Air Logo" className="h-24 w-auto" />
               </Link>
             </div>
             
