@@ -20,19 +20,19 @@ const Header = () => {
           {/* Mobile Layout */}
           <div className="md:hidden">
             {/* Mobile: Logo between LA Area and Phone */}
-            <div className="flex justify-between items-center py-4 px-2">
-              <div className="flex items-center text-white">
+            <div className="relative flex items-center py-4 px-2">
+              <div className="flex items-center text-white flex-1">
                 <MapPin className="h-4 w-4 mr-1" />
                 <div>
                   <div className="font-medium text-sm">LA Area</div>
                 </div>
               </div>
               
-              <Link to="/" className="flex flex-col items-center">
+              <Link to="/" className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
                 <img src="/lovable-uploads/8e96ab51-028f-4f6d-b8f0-133dbd16a69d.png" alt="Temp Kings Air Logo" className="h-20 w-auto" />
               </Link>
               
-              <div className="flex items-center text-white">
+              <div className="flex items-center text-white flex-1 justify-end">
                 <Phone className="h-4 w-4 mr-1" />
                 <div>
                   <div className="font-medium text-sm">
