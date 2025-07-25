@@ -41,7 +41,7 @@ const Header = () => {
               <div className="flex items-center text-white">
                 <Phone className="h-5 w-5 mr-2" />
                 <div>
-                  <div className="text-orange-400 font-medium text-sm">24/7 Emergency Services</div>
+                  <div className="text-orange-400 font-medium text-sm">Contact Us</div>
                   <div className="font-medium text-sm">
                     <a href="tel:626-400-5300" className="hover:text-hvac-yellow">
                       626-400-5300
