@@ -47,7 +47,7 @@ const Header = () => {
             </div>
             
             {/* Mobile: Navigation */}
-            <div className="pb-2">
+            <div className="pb-1">
               <div className="flex flex-wrap justify-center gap-2 text-sm">
                 <button onClick={() => scrollToSection('services-section')} className="text-white hover:text-blue-200 font-medium transition-colors duration-200 px-2">
                   Services
