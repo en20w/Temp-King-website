@@ -19,21 +19,19 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           {/* Mobile Layout */}
           <div className="md:hidden">
-            {/* Mobile: Logo centered at top */}
-            <div className="flex justify-center py-4">
-              <Link to="/" className="flex flex-col items-center">
-                <img src="/lovable-uploads/8e96ab51-028f-4f6d-b8f0-133dbd16a69d.png" alt="Temp Kings Air Logo" className="h-28 w-auto" />
-              </Link>
-            </div>
-            
-            {/* Mobile: Contact info row */}
-            <div className="flex justify-between items-center pb-2 px-2">
+            {/* Mobile: Logo between LA Area and Phone */}
+            <div className="flex justify-between items-center py-4 px-2">
               <div className="flex items-center text-white">
                 <MapPin className="h-4 w-4 mr-1" />
                 <div>
                   <div className="font-medium text-sm">LA Area</div>
                 </div>
               </div>
+              
+              <Link to="/" className="flex flex-col items-center">
+                <img src="/lovable-uploads/8e96ab51-028f-4f6d-b8f0-133dbd16a69d.png" alt="Temp Kings Air Logo" className="h-20 w-auto" />
+              </Link>
+              
               <div className="flex items-center text-white">
                 <Phone className="h-4 w-4 mr-1" />
                 <div>
