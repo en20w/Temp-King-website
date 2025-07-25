@@ -242,8 +242,16 @@ const Home = () => {
               <h3 className="text-lg font-bold text-center">San Marino</h3>
             </div>
 
-            {/* Arcadia */}
+            {/* South Pasadena */}
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '0.9s'}}>
+              <div className="bg-cover bg-center rounded-xl h-32 mb-4 flex items-end justify-center relative" style={{backgroundImage: 'url(/lovable-uploads/7a5012c6-943f-42ca-a885-cf7f6674407b.png)'}}>
+                <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
+              </div>
+              <h3 className="text-lg font-bold text-center">South Pasadena</h3>
+            </div>
+
+            {/* Arcadia */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-white border border-white/20 hover:bg-white/15 transition-all duration-300 animate-fade-in" style={{animationDelay: '1.0s'}}>
               <div className="bg-cover bg-center rounded-xl h-32 mb-4 flex items-end justify-center relative" style={{backgroundImage: 'url(/lovable-uploads/aafbe202-25c9-4e1c-a2ed-9ae6d9fe6230.png)'}}>
                 <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
               </div>
