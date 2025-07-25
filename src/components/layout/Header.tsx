@@ -23,8 +23,8 @@ const Header = () => {
               <div className="flex items-center text-white">
                 <MapPin className="h-5 w-5 mr-2" />
                 <div>
-                  <div className="font-medium text-base">Serving Greater Los Angeles</div>
-                  <div className="text-sm text-blue-200">and Surrounding Areas</div>
+                  <div className="font-medium text-lg">Serving Greater Los Angeles</div>
+                  <div className="text-base text-blue-200">and Surrounding Areas</div>
                   
                 </div>
               </div>
@@ -41,8 +41,8 @@ const Header = () => {
               <div className="flex items-center text-white">
                 <Phone className="h-5 w-5 mr-2" />
                 <div>
-                  <div className="text-orange-400 font-medium text-base">Contact Us</div>
-                  <div className="font-medium text-base">
+                  <div className="text-orange-400 font-medium text-lg">Contact Us</div>
+                  <div className="font-medium text-lg">
                     <a href="tel:626-400-5300" className="hover:text-hvac-yellow">
                       626-400-5300
                     </a>
