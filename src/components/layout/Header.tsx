@@ -32,7 +32,7 @@ const Header = () => {
 
             {/* Center - Logo */}
             <Link to="/" className="flex flex-col items-center mt-2">
-              <img src="/lovable-uploads/8e96ab51-028f-4f6d-b8f0-133dbd16a69d.png" alt="Temp Kings Air Logo" className="h-52 w-auto mb-2" />
+              <img src="/lovable-uploads/8e96ab51-028f-4f6d-b8f0-133dbd16a69d.png" alt="Temp Kings Air Logo" className="h-49 w-auto mb-2" />
               
             </Link>
 
