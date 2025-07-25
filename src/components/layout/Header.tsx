@@ -20,49 +20,45 @@ const Header = () => {
           {/* Mobile Layout */}
           <div className="md:hidden">
             {/* Mobile: Logo centered at top */}
-            <div className="flex justify-center py-6">
+            <div className="flex justify-center py-4">
               <Link to="/" className="flex flex-col items-center">
                 <img src="/lovable-uploads/8e96ab51-028f-4f6d-b8f0-133dbd16a69d.png" alt="Temp Kings Air Logo" className="h-20 w-auto" />
               </Link>
             </div>
             
-            {/* Mobile: Contact info centered */}
-            <div className="flex flex-col items-center gap-3 py-4">
-              {/* Phone - Primary CTA */}
+            {/* Mobile: Contact info row */}
+            <div className="flex justify-between items-center pb-2 px-2">
               <div className="flex items-center text-white">
-                <Phone className="h-5 w-5 mr-2" />
-                <div className="text-center">
-                  <div className="text-orange-400 text-xs font-medium">Call Now</div>
-                  <div className="font-bold text-lg">
-                    <a href="tel:626-400-5300" className="hover:text-hvac-yellow transition-colors">
+                <MapPin className="h-4 w-4 mr-1" />
+                <div>
+                  <div className="font-medium text-sm">LA Area</div>
+                </div>
+              </div>
+              <div className="flex items-center text-white">
+                <Phone className="h-4 w-4 mr-1" />
+                <div>
+                  <div className="font-medium text-sm">
+                    <a href="tel:626-400-5300" className="hover:text-hvac-yellow">
                       626-400-5300
                     </a>
                   </div>
                 </div>
               </div>
-              
-              {/* Location */}
-              <div className="flex items-center text-white">
-                <MapPin className="h-4 w-4 mr-2" />
-                <div className="text-center">
-                  <div className="font-medium text-sm">Serving Greater LA Area</div>
-                </div>
-              </div>
             </div>
             
             {/* Mobile: Navigation */}
-            <div className="pb-4">
-              <div className="flex flex-wrap justify-center gap-3 text-sm px-4">
-                <button onClick={() => scrollToSection('services-section')} className="text-white hover:text-blue-200 font-medium transition-colors duration-200 px-3 py-2 rounded-lg hover:bg-white/10">
+            <div className="pb-2">
+              <div className="flex flex-wrap justify-center gap-2 text-sm">
+                <button onClick={() => scrollToSection('services-section')} className="text-white hover:text-blue-200 font-medium transition-colors duration-200 px-2">
                   Services
                 </button>
-                <button onClick={() => scrollToSection('schedule-appointment')} className="text-white hover:text-blue-200 font-medium transition-colors duration-200 px-3 py-2 rounded-lg hover:bg-white/10">
+                <button onClick={() => scrollToSection('schedule-appointment')} className="text-white hover:text-blue-200 font-medium transition-colors duration-200 px-2">
                   Schedule
                 </button>
-                <button onClick={() => scrollToSection('hours-of-operation')} className="text-white hover:text-blue-200 font-medium transition-colors duration-200 px-3 py-2 rounded-lg hover:bg-white/10">
+                <button onClick={() => scrollToSection('hours-of-operation')} className="text-white hover:text-blue-200 font-medium transition-colors duration-200 px-2">
                   Hours
                 </button>
-                <button onClick={() => scrollToSection('service-areas')} className="text-white hover:text-blue-200 font-medium transition-colors duration-200 px-3 py-2 rounded-lg hover:bg-white/10">
+                <button onClick={() => scrollToSection('service-areas')} className="text-white hover:text-blue-200 font-medium transition-colors duration-200 px-2">
                   Areas
                 </button>
               </div>
