@@ -20,7 +20,7 @@ const Header = () => {
           {/* Mobile Layout */}
           <div className="md:hidden">
             {/* Mobile: Logo between LA Area and Phone */}
-            <div className="relative flex items-center py-9 px-2">
+            <div className="relative flex items-center py-6 px-2">
               <div className="flex items-center text-white flex-1">
                 <MapPin className="h-4 w-4 mr-1" />
                 <div>
