@@ -167,7 +167,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Free Consultation Box */}
-        <div className="mt-24 max-w-4xl mx-auto">
+        <div className="mt-16 max-w-4xl mx-auto">
           <div className="relative bg-gradient-to-br from-blue-600 to-cyan-500 p-8 rounded-2xl shadow-2xl overflow-hidden">
             {/* Background decoration */}
             <div className="absolute inset-x-0 bottom-0 top-1/2 bg-blue-900/20"></div>
