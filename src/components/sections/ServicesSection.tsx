@@ -73,7 +73,7 @@ const ServicesSection = () => {
   };
 
   const services = [...serviceCategories.residential, ...serviceCategories.specialized];
-  return <section id="services-section" className="py-16 bg-gray-50 relative overflow-hidden">
+  return <section id="services-section" className="pt-16 pb-8 bg-gray-50 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-32 h-32 bg-hvac-red rounded-full blur-3xl"></div>
