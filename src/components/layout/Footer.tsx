@@ -109,7 +109,7 @@ const Footer = () => {
               © 2024 HVAC ProService. All rights reserved.
             </div>
             <div className="flex space-x-4">
-              <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
               <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
               <Link to="/sitemap" className="hover:text-white transition-colors">Sitemap</Link>
             </div>
