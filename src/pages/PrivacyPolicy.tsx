@@ -1,11 +1,9 @@
 import React from 'react';
-import Layout from '@/components/layout/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Shield, Phone, Users, Lock, Eye, FileText, Calendar } from 'lucide-react';
 
 const PrivacyPolicy = () => {
   return (
-    <Layout>
       <div className="min-h-screen bg-gradient-to-br from-background via-background to-background/80">
         {/* Hero Section */}
         <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-transparent border-b border-border/50">
@@ -362,7 +360,6 @@ const PrivacyPolicy = () => {
           </div>
         </div>
       </div>
-    </Layout>
   );
 };
 
