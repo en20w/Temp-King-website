@@ -1,8 +1,10 @@
 import React from 'react';
+import Layout from '../components/layout/Layout';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <Layout>
+      <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold text-foreground mb-8">Privacy Policy</h1>
@@ -180,6 +182,7 @@ const PrivacyPolicy = () => {
         </div>
       </div>
     </div>
+    </Layout>
   );
 };
 
